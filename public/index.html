@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CourseWork</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Five Nights At Freddy's Character Guide</title>
 </head>
 <body>
+    <img src ="images/title.png" id = "titleimage"> <br> <br>
     <h1>Hello Lara</h1>
+    <p id = "upper">The text below changes</p>
+    <input type = "text" id = "inp"> <br><br>
+    <button id = "btn" onclick="changeImage()">Click to change the text</button>
 
+    <button id = "1" onclick="fnaf1('1')">FNAF 1</button>
+    <button id = "2" onclick="fnaf2('2')">FNAF 2</button>
+    <button id = "3" onclick="fnaf3('3')">FNAF 3</button>
+    <button id = "4" onclick="fnaf4('4')">FNAF 4</button>
+    <button id = "5" onclick="sisterlocation('5')">Sister Location</button>
+    <button id = "6" onclick="pizzariasimulator('6')">Pizzaria Simulator</button>
+    <button id = "7" onclick="helpwanted('7')">Help Wanted</button>
+    <button id = "8" onclick="securitybreach('8')">Security Breach</button>
+    <button id = "9" onclick="helpwanted2('9')">Help Wanted 2</button>
 
-    <form action="" method="get" class="form-example">
-        <div class="form-example">
-            <label for="name">Enter your name: </label>
-            <input type="text" name="name" id="name" required/>
-        </div>
-        <div class="form-example">
-            <label for="email">Enter your email: </label>
-            <input type="email" name="email" id="email" requires />
-        </div>
-        <div class="form-example">
-            <input type="submit" value="Subscribe!" />
-        </div>
-    </form>
+    <p id = "para1">Initial text para1</p>
+    <p id = "para2">Initial text para2</p>
+
+    <script src="index.js"></script>
+
+        
+    
 
     <div id="content"></div>
-    <script></script>
+
 </body>
 </html>
