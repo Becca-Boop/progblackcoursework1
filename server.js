@@ -1,10 +1,21 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express()
 
-app.use(express.static(__dirname + '/public'));
+const fs = require('fs');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({encoded: true}));
+
 var port = 8090;
 
-let buildabears = [ ' Lara', ' Kyle', ' Gwen'];
+const routes = require('./routes/routes.js')(app, fs);
+const server = app.listen(8090, () => {
+    console.log('listening on port %s...', server.address().port);
+});
+
+app.use(express.static(__dirname + '/public'));
+
 
 
 
