@@ -7,9 +7,10 @@ const fs = require('fs');
 //app.use(bodyParser.json());
 //app.use(bodyParser.urlencoded({encoded: true}));
 
-var port = 8090;
+
 
 const routes = require('./routes/routes.js')(app, fs);
+
 const server = app.listen(8090, () => {
     console.log('listening on port %s...', server.address().port);
 });
@@ -21,7 +22,7 @@ app.use(express.static(__dirname + '/public'));
 
 //http://127.0.0.1:8090/
 app.get('/', function(req, resp){
-    resp.send('Hello')
+    resp.send('Hello');
 });
 
 //http://127.0.0.1:8090/index

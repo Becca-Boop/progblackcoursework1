@@ -48,9 +48,10 @@ const characterRoutes = (app, fs) => {
             selection.appendChild(myArticle);
         }
     }
-    if (typeof window !== "undefined") {
-        populate();
-    }
+    // if (typeof window !== "undefined") {
+    //     res.send(populate());
+    // }
+    populate();
 };
 
 module.exports = characterRoutes;
