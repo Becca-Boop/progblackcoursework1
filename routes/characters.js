@@ -1,11 +1,15 @@
+const { request } = require("express");
+
     
 const characterRoutes = (app, fs) => {
     async function populate() {
-        const requestURL = "http://localhost:8090"
+        const requestURL = "https://raw.githubusercontent.com/Becca-Boop/progblackcoursework1/main/data/characters.json";
+
         const request = new Request(requestURL);
+        //const request = new Request('../data/characters.json');
 
         const response = await fetch(request);
-        const gamesText = await response.json();
+        const gamesText = await response.text();
 
         const games =JSON.parse(gamesText);
         populateHeader(games);
@@ -44,8 +48,9 @@ const characterRoutes = (app, fs) => {
             selection.appendChild(myArticle);
         }
     }
-
-    populate();
+    if (typeof window !== "undefined") {
+        populate();
+    }
 };
 
 module.exports = characterRoutes;

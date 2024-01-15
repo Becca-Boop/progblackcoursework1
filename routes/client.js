@@ -6,5 +6,4 @@ window.addEventListener('click', async function(event){
     } catch(e) {
         this.alert(e);
     }
-    
 });

@@ -1,11 +1,11 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const app = express()
 
 const fs = require('fs');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({encoded: true}));
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({encoded: true}));
 
 var port = 8090;
 
@@ -21,7 +21,7 @@ app.use(express.static(__dirname + '/public'));
 
 //http://127.0.0.1:8090/
 app.get('/', function(req, resp){
-    resp.send('Hello' + buildabears)
+    resp.send('Hello')
 });
 
 //http://127.0.0.1:8090/index
@@ -49,7 +49,5 @@ app.post('/new', function(req,resp){
     
     //resp.write
 });
-
-app.listen(port)
 
 
