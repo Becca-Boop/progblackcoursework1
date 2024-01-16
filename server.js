@@ -63,7 +63,9 @@ app.get('/index', async function(req, resp){
     // for (const character of characters){
     //     actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
     // }
-    resp.send(characters[0].characterName);
+    //const json = JSON.stringify(characters[0].characterName)
+    const json = JSON.stringify(characters[0]);
+    resp.send(json);
 });
 
 app.get('/index2', async function(req, resp){
@@ -76,7 +78,7 @@ app.get('/index2', async function(req, resp){
     const gamesText = await response.text();
 
     
-    const JSONgames = JSON.parse(data);
+    const JSONgames = JSON.parse(gamesText);
     //resp.send(JSONgames[0]["games"][0]["characters"][0]["characterName"]);
     //resp.send(JSONgames[0]);
     //const games = JSON.parse('/data/characters.json');

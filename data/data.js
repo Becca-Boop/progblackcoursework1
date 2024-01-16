@@ -1,4 +1,4 @@
-{
+const data = {
     "gamesseries": "Five Nights At Freddy's Series",
     "author": "Scott Cawthon",
     "created": 2014,
@@ -57,5 +57,7 @@
     }
 ]
 }
+
+module.exports = data;
     
     
