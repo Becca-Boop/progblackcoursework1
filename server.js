@@ -60,17 +60,20 @@ app.get('/index', async function(req, resp){
     const gamesText = await response.text();
 
     const JSONgames = JSON.parse(gamesText);
-    resp.send(JSONgames["games"][0]["characters"][0]["characterName"]);
+    //resp.send(JSONgames[0]["games"][0]["characters"][0]["characterName"]);
+    //resp.send(JSONgames[0]);
     console.log('${games}')
     //const games = JSON.parse('/data/characters.json');
-    const characters = games.characters;
+    const characters = JSONgames.games[0].characters;
     var actualresponse = 'lara';
+
+    resp.send("${characters[0]}");
 
     for (const character of characters){
         console.log('${character.name}');
         actualresponse = actualresponse + ('${character.name} \n${character.paragraph} \nBehaviour: ${character.behaviour}');
     }
-    //resp.send(actualresponse);
+    resp.send(actualresponse);
 });
 
 //http://127.0.0.1:8090/users/34/books/8989
