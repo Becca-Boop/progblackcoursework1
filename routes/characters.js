@@ -1,4 +1,6 @@
 const { request } = require("express");
+var json = require('./data/characters.json');
+
 
 //document.write('<html><body><h2>HTML</h2></body></html>');
 

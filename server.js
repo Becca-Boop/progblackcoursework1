@@ -16,6 +16,8 @@ const server = app.listen(8090, () => {
 });
 
 app.use(express.static(__dirname + '/public'));
+app.set('data', require('./data/data.js'));
+
 
 //http://127.0.0.1:8090/w?game=1/w?character=FreddyFazbear
 app.get('/characters/w', async function(req,  resp){
@@ -51,6 +53,20 @@ app.get('/', function(req, resp){
 
 //http://127.0.0.1:8090/index
 app.get('/index', async function(req, resp){
+    const data = req.app.get('data');
+
+    //const JSONgames = JSON.parse(data);
+
+    const characters = data.games[0].characters;
+    var actualresponse = '';
+
+    // for (const character of characters){
+    //     actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
+    // }
+    resp.send(characters[0].characterName);
+});
+
+app.get('/index2', async function(req, resp){
     const requestURL = "https://raw.githubusercontent.com/Becca-Boop/progblackcoursework1/main/data/characters.json";
 
     const request = new Request(requestURL);
@@ -59,10 +75,10 @@ app.get('/index', async function(req, resp){
     const response = await fetch(request);
     const gamesText = await response.text();
 
-    const JSONgames = JSON.parse(gamesText);
+    
+    const JSONgames = JSON.parse(data);
     //resp.send(JSONgames[0]["games"][0]["characters"][0]["characterName"]);
     //resp.send(JSONgames[0]);
-    console.log(`${JSONgames}`)
     //const games = JSON.parse('/data/characters.json');
     const characters = JSONgames.games[0].characters;
     var actualresponse = '';
@@ -71,12 +87,12 @@ app.get('/index', async function(req, resp){
     //resp.send(`${character}`)
 
     for (const character of characters){
-        console.log(`${character.characterName}`);
         actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
     }
     //resp.send(actualresponse);
-    resp.send(`<!DOCTYPE html> <html lang="en"><head> <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Five Nights At Freddy\'s Character Guide</title> </head><body><h1>Five Nights At Freddy\'s Character Guide</h1>${actualresponse}<div id = "root"></div><script src="routes.js" defer></script></body></html>`)
+    resp.send(`<!DOCTYPE html> <html lang="en"><head> <meta charset="UTF-8"><link rel="stylesheet" href="routes/styles.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Five Nights At Freddy\'s Character Guide</title> </head><body><h1>Five Nights At Freddy\'s Character Guide</h1>${actualresponse}<div id = "root"></div><script src="routes.js" defer></script></body></html>`)
 });
+
 
 //http://127.0.0.1:8090/users/34/books/8989
 app.get('/users/:userId/books/:bookId', function(req, resp){
