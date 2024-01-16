@@ -62,18 +62,20 @@ app.get('/index', async function(req, resp){
     const JSONgames = JSON.parse(gamesText);
     //resp.send(JSONgames[0]["games"][0]["characters"][0]["characterName"]);
     //resp.send(JSONgames[0]);
-    console.log('${games}')
+    console.log(`${JSONgames}`)
     //const games = JSON.parse('/data/characters.json');
     const characters = JSONgames.games[0].characters;
-    var actualresponse = 'lara';
+    var actualresponse = '';
 
-    resp.send("${characters[0]}");
+    //resp.send(JSONgames.games[0].characters[0].characterName);
+    //resp.send(`${character}`)
 
     for (const character of characters){
-        console.log('${character.name}');
-        actualresponse = actualresponse + ('${character.name} \n${character.paragraph} \nBehaviour: ${character.behaviour}');
+        console.log(`${character.characterName}`);
+        actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
     }
-    resp.send(actualresponse);
+    //resp.send(actualresponse);
+    resp.send(`<!DOCTYPE html> <html lang="en"><head> <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Five Nights At Freddy\'s Character Guide</title> </head><body><h1>Five Nights At Freddy\'s Character Guide</h1>${actualresponse}<div id = "root"></div><script src="routes.js" defer></script></body></html>`)
 });
 
 //http://127.0.0.1:8090/users/34/books/8989

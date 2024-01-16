@@ -1,6 +1,7 @@
 const { request } = require("express");
 
-    
+//document.write('<html><body><h2>HTML</h2></body></html>');
+
 const characterRoutes = (app, fs) => {
     async function populate() {
         const requestURL = "https://raw.githubusercontent.com/Becca-Boop/progblackcoursework1/main/data/characters.json";
