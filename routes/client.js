@@ -164,7 +164,8 @@ async function fetchchar(event) {
     try {
     let response = await fetch('http://127.0.0.1:8090/index1');
     if(response.ok){
-    let body = await response.text();
+    let jsonbody = await response.json();
+    let body = JSON.parse(jsonbody);
     document.getElementById(1).innerHTML=body;
     } else{
         alert("Error: 404");
