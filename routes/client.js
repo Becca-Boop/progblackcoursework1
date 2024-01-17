@@ -154,24 +154,33 @@ function populateCharacters(obj){
 // };
 
 async function fetchchar(event) {
-    //const response = await fetch(request);
-    //const movies = await response.json();
-
-    // fetch('http://127.0.0.1:8090/index1')
-    // .then(response => response.text())
-    // .then(body => document.getElementById(1).innerHTML=body)
-    // .catch((error) => alert (error))
     try {
-    let response = await fetch('http://127.0.0.1:8090/index1');
-    if(response.ok){
-    let jsonbody = await response.json();
-    let body = JSON.parse(jsonbody);
-    document.getElementById(1).innerHTML=body;
-    } else{
+        let response = await fetch('http://127.0.0.1:8090/index1');
+        if(response.ok){
+        let jsonbody = await response.json();
+        let body = JSON.parse(JSON.stringify(jsonbody));
+        document.getElementById("para").innerHTML=body;
+        var image = document.getElementById("titleimage");
+        image.src = "images/titlesmall.png";
+        } else{
+            alert("Error: 404");
+        }
+    } catch(e) {
+        alert(e);
+    }
+};
+
+async function character(game) {
+    try {
+        let response = await fetch('http://127.0.0.1:8090/${game}');
+        if(response.ok){
+            let jsonbody = await response.json();
+            let body = JSON.parse(JSON.stringify(jsonbody));
+            document.getElementById(1).innerHTML=body;
+        } else{
         alert("Error: 404");
     }
     } catch(e) {
         alert(e);
     }
 };
-

@@ -54,7 +54,7 @@ app.get('/', function(req, resp){
     resp.send('Hello');
 });
 
-//http://127.0.0.1:8090/index
+//http://127.0.0.1:8090/index1
 app.get('/index1', async function(req, resp){
     const data = req.app.get('data');
 
@@ -67,7 +67,44 @@ app.get('/index1', async function(req, resp){
     //     actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
     // }
     //const json = JSON.stringify(characters[0].characterName)
-    const json = JSON.stringify(characters[0]);
+    const wholecharacter = JSON.stringify(characters[0].characterName + `\n` + characters[0].description + `\n` + characters[0].behaviour);
+    const json = JSON.stringify(wholecharacter);
+    resp.send(json);
+});
+
+app.get('/1', async function(req, resp){
+    const data = req.app.get('data');
+
+    //const JSONgames = JSON.parse(data);
+
+    const characters = data.games[0].characters;
+    var actualresponse = '';
+
+    // for (const character of characters){
+    //     actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
+    // }
+    //const json = JSON.stringify(characters[0].characterName)
+    const json = JSON.stringify(characters[0].description);
+    resp.send(json);
+});
+
+app.get('/w', async function(req, resp){
+    const data = req.app.get('data');
+
+    const JSONgames = JSON.parse(data);
+
+    //req.query.person
+
+    const characters = data.games[0].characters;
+    var actualresponse = '';
+
+    for (const character of characters){
+        if (JSON.parse(character.characterName) == req.query.name){
+            console.log(character.description);
+            const json = JSON.stringify(character.description);
+        }
+    }
+    //const json = JSON.stringify(characters[0].characterName)
     resp.send(json);
 });
 
@@ -126,7 +163,7 @@ app.get('/:name&email', function(req, resp){
 
 
 //http://127.0.0.1:8090/w?person=Lara
-app.get('/w', function(req, resp){
+app.get('/wss', function(req, resp){
     resp.send(req.query.person)
 });
 
