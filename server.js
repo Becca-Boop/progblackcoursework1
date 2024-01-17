@@ -15,8 +15,11 @@ const server = app.listen(8090, () => {
     console.log('listening on port %s...', server.address().port);
 });
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('routes'));
 app.set('data', require('./data/data.js'));
+
+//app.set('styles', require('./routes/styles.css'));
+
 
 
 //http://127.0.0.1:8090/w?game=1/w?character=FreddyFazbear
@@ -52,7 +55,7 @@ app.get('/', function(req, resp){
 });
 
 //http://127.0.0.1:8090/index
-app.get('/index', async function(req, resp){
+app.get('/index1', async function(req, resp){
     const data = req.app.get('data');
 
     //const JSONgames = JSON.parse(data);
@@ -92,14 +95,29 @@ app.get('/index2', async function(req, resp){
         actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
     }
     //resp.send(actualresponse);
-    resp.send(`<!DOCTYPE html> <html lang="en"><head> <meta charset="UTF-8"><link rel="stylesheet" href="routes/styles.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Five Nights At Freddy\'s Character Guide</title> </head><body><h1>Five Nights At Freddy\'s Character Guide</h1>${actualresponse}<div id = "root"></div><script src="routes.js" defer></script></body></html>`)
+    resp.send(`<!DOCTYPE html> <html lang="en"><head> <meta charset="UTF-8"><link rel="stylesheet" href="styles"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Five Nights At Freddy\'s Character Guide</title> </head><body><h1>Five Nights At Freddy\'s Character Guide</h1>${actualresponse}<div id = "root"></div><script type="text/javascript" src="routes/routes.js"></script></body></html>`)
 });
 
+app.get('/index3', function(req, resp){
+    const data = req.app.get('data');
+
+    const characters = data.games[0].characters;
+    var actualresponse = '';
+
+    const json = JSON.stringify(data);
+    resp.send(populate2(json));
+    
+});
 
 //http://127.0.0.1:8090/users/34/books/8989
 app.get('/users/:userId/books/:bookId', function(req, resp){
     resp.send(req.params)
 });
+
+//http://127.0.0.1:8090/routes/styles.css
+// app.get('/routes/styles.css', function(req, resp){
+//     resp.send(`body { background-color: #051834;}h1 {color: whitesmoke;}p {color: whitesmoke;} h2{color: whitesmoke;} img {width: 100%;height: auto;}button {background-color:whitesmoke;color: #051834;}`);
+// });
 
 //http://127.0.0.1:8090/users/34/books/8989
 app.get('/:name&email', function(req, resp){
