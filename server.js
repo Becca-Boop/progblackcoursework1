@@ -16,47 +16,14 @@ const server = app.listen(8090, () => {
 });
 
 app.use(express.static('routes'));
-app.set('data', require('./data/data.js'));
+app.use(express.static('data'));
+//app.set('data', require('./data/data.js'));
+app.set('jsondata', require('./data/characters.json'));
 
-//app.set('styles', require('./routes/styles.css'));
-
-
-
-//http://127.0.0.1:8090/w?game=1/w?character=FreddyFazbear
-app.get('/characters/w', async function(req,  resp){
-    //const characterss = require('./routes/index.html')(app, fs);
-    const requestURL = "https://raw.githubusercontent.com/Becca-Boop/progblackcoursework1/main/data/characters.json";
-
-    const request = new Request(requestURL);
-    //const request = new Request('../data/characters.json');
-
-    const response = await fetch(request);
-    const gamesText = await response.text();
-
-    const games = JSON.parse(gamesText);
-    //const games = JSON.parse('/data/characters.json');
-    resp.send(req.params);
-    const characters = games.characters;
-    var actualresponse = 'lara';
-
-    for (const character of characters){
-        console.log(req.query.character);
-        if (character.name == req.query.character){
-            actualresponse = ('${character.name} \n${character.paragraph} \nBehaviour: ${character.behaviour}');
-        }
-    }
-    resp.send(actualresponse);
-})
-
-
-//http://127.0.0.1:8090/
-app.get('/', function(req, resp){
-    resp.send('Hello');
-});
 
 //http://127.0.0.1:8090/index1
 app.get('/index1', async function(req, resp){
-    const data = req.app.get('data');
+    const data = req.app.get('jsondata');
 
     //const JSONgames = JSON.parse(data);
 
@@ -72,8 +39,8 @@ app.get('/index1', async function(req, resp){
     resp.send(json);
 });
 
-app.get('/1', async function(req, resp){
-    const data = req.app.get('data');
+app.get('/lara', async function(req, resp){
+    const data = req.app.get('jsondata');
 
     //const JSONgames = JSON.parse(data);
 
@@ -88,8 +55,89 @@ app.get('/1', async function(req, resp){
     resp.send(json);
 });
 
+app.get('/:game/:character', async function(req,resp){
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games
+
+    for (const thisgame of JSONgames){
+        if (thisgame.id == req.params['game']){
+            const thisgamecharacters = thisgame.characters;
+            for (const thischaracter of thisgamecharacters){
+                if(thischaracter.id == req.params['character']){
+                    const foundcharacter = thischaracter
+                    const json = JSON.stringify(foundcharacter.characterName);
+                    resp.send(json);
+                }
+            }
+        }
+    }
+});
+
+app.get('/:game/:character:/info', async function(req,resp){
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games
+
+    for (const thisgame of JSONgames){
+        if (thisgame.id == req.params['game']){
+            const thisgamecharacters = thisgame.characters;
+            for (const thischaracter of thisgamecharacters){
+                if(thischaracter.id == req.params['character']){
+                    const foundcharacter = thischaracter
+                    const whichinfo = req.parems['info'];
+                    const json = JSON.stringify(foundcharacter.whichinfo);
+                    resp.send(json);
+                }
+            }
+        }
+    }
+});
+
+// app.get('/:game', async function(req,resp){
+//     const data = req.app.get('jsondata');
+//     const JSONgames = data.games;
+
+//     for (const thisgame of JSONgames){
+//         if (thisgame.id == req.params['game']){
+//             resp.send(JSON.stringify(thisgame.name))
+//         };
+//     };
+// });
+
+app.get('/:game', async function(req,resp){
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games;
+    var i = 0;
+
+    for (const thisgame of JSONgames){
+        if (thisgame.id == req.params['game']){
+            for(const character of thisgame.characters){
+                i++;
+            };
+        };
+    };
+    resp.send(JSON.stringify(i));
+});
+
+app.get('/character/:character', async function(req,resp){
+    const data = req.app.get('jsondata');
+    //const JSONgames = JSON.parse(data);
+
+    const characters = data.games[0].characters;
+
+
+    for (const character of characters){
+        if (character.id == req.params['character']){
+            resp.send(JSON.stringify(character.description));
+        }
+    }
+
+    //const json = JSON.stringify(characters[0].characterName)
+    //const json = JSON.stringify(character.description);
+    //resp.send(json);
+});
+
 app.get('/w', async function(req, resp){
-    const data = req.app.get('data');
+    const data = req.app.get('jsondata');
 
     const JSONgames = JSON.parse(data);
 
@@ -100,7 +148,6 @@ app.get('/w', async function(req, resp){
 
     for (const character of characters){
         if (JSON.parse(character.characterName) == req.query.name){
-            console.log(character.description);
             const json = JSON.stringify(character.description);
         }
     }
@@ -136,7 +183,7 @@ app.get('/index2', async function(req, resp){
 });
 
 app.get('/index3', function(req, resp){
-    const data = req.app.get('data');
+    const data = req.app.get('jsondata');
 
     const characters = data.games[0].characters;
     var actualresponse = '';
@@ -145,31 +192,3 @@ app.get('/index3', function(req, resp){
     resp.send(populate2(json));
     
 });
-
-//http://127.0.0.1:8090/users/34/books/8989
-app.get('/users/:userId/books/:bookId', function(req, resp){
-    resp.send(req.params)
-});
-
-//http://127.0.0.1:8090/routes/styles.css
-// app.get('/routes/styles.css', function(req, resp){
-//     resp.send(`body { background-color: #051834;}h1 {color: whitesmoke;}p {color: whitesmoke;} h2{color: whitesmoke;} img {width: 100%;height: auto;}button {background-color:whitesmoke;color: #051834;}`);
-// });
-
-//http://127.0.0.1:8090/users/34/books/8989
-app.get('/:name&email', function(req, resp){
-    resp.send(req.params)
-});
-
-
-//http://127.0.0.1:8090/w?person=Lara
-app.get('/wss', function(req, resp){
-    resp.send(req.query.person)
-});
-
-app.post('/new', function(req,resp){
-    
-    //resp.write
-});
-
-

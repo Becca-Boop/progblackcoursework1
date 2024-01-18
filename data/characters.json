@@ -6,52 +6,441 @@
     {
         "name": "Five Nights At Freddy's",
         "created": 2014,
+        "id": 1,
         "characters": [
         {
             "characterName": "Freddy Fazbear",
             "description": "Freddy Fazbear is the titular main antagonist of Five Nights at Freddy's, who acts as the mascot of Freddy Fazbear's Pizza. While acting as the beloved mascot during the day, the possessed animatronic hunts down any adult in the establishment at night.",
-            "behaviour": "Freddy Fazbear serves as the primary antagonist of the game. His role is to portray the main character's adversary and contribute to the custom night feature and to open up the map. Freddy Fazbear becomes active on Night 3 and continues to move throughout subsequent nights. He initially starts at the Show Stage and then progresses to the Dining Area, Bathroom, Kitchen, and eventually reaches the Office. If the player runs out of power, Freddy will also appear, and play his theme, the Toreador March, before game over. While he is visible on most cameras, only his eyes can be seen. It is crucial to keep an eye on him as his laughter indicates his movements and location. When he reaches the East Hall Corner, the player must either monitor Cam 4B or close the right door to prevent him from entering the office. Allowing Freddy to enter the office results in a game over. Additionally, a tactic known as 'cam-locking' can be employed when Freddy is on the Show Stage or in the East Hall Corner. This involves observing him on the camera without switching to another room, which effectively immobilizes Freddy in that location. This strategy can be useful for completing the 20/20/20/20 mode while conserving power. However, cam-locking on the Show Stage does not work in the 20/20/20/20 mode. A number between 1 and 20 is chosen at random, which is compared to Freddy’s current AI level. If the level is more or equal to the number, Freddy will move. He gets an opportunity to progress every 3.02 seconds."
+            "behaviour": "Freddy Fazbear serves as the primary antagonist of the game. His role is to portray the main character's adversary and contribute to the custom night feature and to open up the map. Freddy Fazbear becomes active on Night 3 and continues to move throughout subsequent nights. He initially starts at the Show Stage and then progresses to the Dining Area, Bathroom, Kitchen, and eventually reaches the Office. If the player runs out of power, Freddy will also appear, and play his theme, the Toreador March, before game over. While he is visible on most cameras, only his eyes can be seen. It is crucial to keep an eye on him as his laughter indicates his movements and location. When he reaches the East Hall Corner, the player must either monitor Cam 4B or close the right door to prevent him from entering the office. Allowing Freddy to enter the office results in a game over. Additionally, a tactic known as 'cam-locking' can be employed when Freddy is on the Show Stage or in the East Hall Corner. This involves observing him on the camera without switching to another room, which effectively immobilizes Freddy in that location. This strategy can be useful for completing the 20/20/20/20 mode while conserving power. However, cam-locking on the Show Stage does not work in the 20/20/20/20 mode. A number between 1 and 20 is chosen at random, which is compared to Freddy’s current AI level. If the level is more or equal to the number, Freddy will move. He gets an opportunity to progress every 3.02 seconds.",
+            "id": 0
         },
         {
             "characterName": "Bonnie The Bunny",
             "description": "lara lara lara bonnie",
-            "behaviour": "bonnie kills me :("
+            "behaviour": "bonnie kills me :(",
+            "id": 1
         },
         {
             "characterName": "Chica Chicken",
             "description": "Chica bunny",
-            "behaviour": "Kitchen"
+            "behaviour": "Kitchen",
+            "id": 2
         },
         {
             "characterName": "Foxy The Pirate Fox",
             "description": "fox fox",
-            "behaviour": "pirates cove"
+            "behaviour": "pirates cove",
+            "id": 3
         }
         ]
     },
     {
         "name": "Five Nights At Freddy's 2",
         "created": 2014,
+        "id": 2,
         "characters": [
         {
             "characterName": "Toy Freddy",
             "description": "Pinky cheeks",
-            "behaviour": "Corridor"
+            "behaviour": "Corridor",
+            "id": 0
         },
         {
             "characterName": "Toy Bonnie",
             "description": "lara lara lara toy bonnie",
-            "behaviour": "right vent"
+            "behaviour": "right vent",
+            "id": 1
         },
         {
-            "characterName": "toy Chica",
+            "characterName": "Toy Chica",
             "description": "Chica toy bunny",
-            "behaviour": "left vent"
+            "behaviour": "left vent",
+            "id": 2
         },
         {
             "characterName": "Mangle",
             "description": "fox fox dead",
-            "behaviour": "was that the bite of 87!?!"
+            "behaviour": "was that the bite of 87!?!",
+            "id": 3
+        },
+        {
+            "characterName": "Withered Freddy",
+            "description": "rawr",
+            "behaviour": "Corridor",
+            "id": 4
+        },
+        {
+            "characterName": "Withered Bonnie",
+            "description": "no face lol",
+            "behaviour": "big ouch",
+            "id": 5
+        },
+        {
+            "characterName": "Withered Chica",
+            "description": "T-posing chica",
+            "behaviour": "eat",
+            "id": 6
+        },
+        {
+            "characterName": "Withered Foxy",
+            "description": "fox fox wither",
+            "behaviour": "withered fox go brrr",
+            "id": 7
+        },
+        {
+            "characterName": "The Puppet",
+            "description": "crying child???",
+            "behaviour": "music box",
+            "id": 8
+        },
+        {
+            "characterName": "Balloon Boy",
+            "description": "Hello?",
+            "behaviour": "flightlight thief",
+            "id": 9
+        },
+        {
+            "characterName": "JJ",
+            "description": "female BB",
+            "behaviour": "creepy child",
+            "id": 10
+        },
+        {
+            "characterName": "Shadow Freddy",
+            "description": "Nightmare foreshadowing",
+            "behaviour": "sit sit",
+            "id": 11
+        },
+        {
+            "characterName": "RWQFSFASXC - 'Shadow Bonnie'",
+            "description": "shadowwwy bon bon",
+            "behaviour": "stand stand",
+            "id": 12
+        }
+        ]
+    },
+    {
+        "name": "Five Nights At Freddy's 3",
+        "created": 2015,
+        "id": 3,
+        "characters": [
+        {
+            "characterName": "Springtrap",
+            "description": "dead guy, charles",
+            "behaviour": "kills kids whoops",
+            "id": 0
+        },
+        {
+            "characterName": "Phantom Freddy",
+            "description": "freddy but halluc",
+            "behaviour": "walk walk",
+            "id": 1
+        },
+        {
+            "characterName": "Phantom Foxy",
+            "description": "fox but hallu",
+            "behaviour": "Rawr but fox",
+            "id": 2
+        },
+        {
+            "characterName": "Phantom Chica",
+            "description": "Phantom Chica is one of the secondary antagonists and six phantom animatronics who first appeared in Five Nights at Freddy's 3. She is a hallucination of a burnt and damaged Chica.",
+            "behaviour": "Phantom Chica lacks a movement pattern, but rather randomly replaces the arcade machine's monitor with a distorted image of her face. The frequency of this occurring increases as the week progresses. \nIf the player does not change Monitor views when this occurs, Phantom Chica will appear in the left side of The Office and proceed to lunge at the player if viewed, disappearing and disabling the ventilation system.",
+            "id": 3
+        },
+        {
+            "characterName": "Phantom BB",
+            "description": "fox but hallu",
+            "behaviour": "Rawr but fox",
+            "id": 4
+        },
+        {
+            "characterName": "Phantom Mangle",
+            "description": "Phantom Mangle is an antagonist in Five Nights at Freddy's 3 and is one of the six phantom animatronics in the game. It is a hallucination of a burned and damaged Mangle.",
+            "behaviour": "Phantom Mangle sometimes appears on CAM 04 hanging from the ceiling and, once spotted, will start emitting a loud, garbled sound. \nHowever, this sound is only an extremely garbled BPSK signal, and meant for ambient purposes. It is not decodable because of how distorted the sound is. \nWhen the player retracts the Monitor, Phantom Mangle will rise up behind the window and remain there. After a few seconds, it will drop down from below the window, thus ending the hallucination and triggering an audio error. If the player does not switch cameras after a certain period of time as passed, Phantom Mangle can, and will, force the Monitor down.",
+            "id": 5
+        },
+        {
+            "characterName": "Phantom Puppet",
+            "description": "The Phantom Puppet is an antagonist in Five Nights at Freddy's 3 and is one of the six phantom animatronics in the game. He is a hallucination of a burned and damaged Puppet.",
+            "behaviour": "The Phantom Puppet acts similarly to Phantom Mangle and Phantom Chica, as it only appears on CAM 08 view randomly. If the player views the Phantom Puppet in CAM 08, they are advised to immediately change the monitor's view. If this warning is not exercised, the Phantom Puppet will teleport to The Office and closely stare directly into the player's face, causing a ventilation error and blocking the use of both the Maintenance Panel and the monitor. \nOnce in the room, the Phantom Puppet cannot be warded off and must leave on his own, which will take approximately 17 seconds. During this period, he allows time for Springtrap to move closer to the player while also leaving the player vulnerable to the other phantoms, especially Phantom Freddy, who may attack, even while the Phantom Puppet is still in The Office.",
+            "id": 6
+        }
+        ]
+    },
+    {
+        "name": "Five Nights At Freddy's 4",
+        "created": 2015,
+        "id": 4,
+        "characters": [
+        {
+            "characterName": "Nightmare Freddy",
+            "description": "Freddles",
+            "behaviour": "Creates Freddles",
+            "id": 0
+        },
+        {
+            "characterName": "Nightmare Bonnie",
+            "description": "scary bon bon",
+            "behaviour": "left door",
+            "id": 1
+        },
+        {
+            "characterName": "Nightmare Chica",
+            "description": "The first night is never usually that bad in any of the games, so I'm just gonna play through this and arrgh",
+            "behaviour": "right door",
+            "id": 2
+        },
+        {
+            "characterName": "Nightmare Foxy",
+            "description": "fox fox but also plush",
+            "behaviour": "Closet",
+            "id": 3
+        },
+        {
+            "characterName": "Nightmare Fredbear",
+            "description": "Not golden freddy",
+            "behaviour": "Night 5",
+            "id": 4
+        },
+        {
+            "characterName": "Nightmare",
+            "description": "Definetly not golden freddy",
+            "behaviour": "annoying noise",
+            "id": 5
+        },
+        {
+            "characterName": "Plushtrap",
+            "description": "Fake springtrap",
+            "behaviour": "chair",
+            "id": 6
+        }
+        ]
+    },
+    {
+        "name": "Five Nights At Freddy's Sister Location",
+        "created": 2016,
+        "id": 5,
+        "characters": [
+        {
+            "characterName": "Circus Baby",
+            "description": "something happened when there was one though",
+            "behaviour": "totally not evil",
+            "id": 0
+        },
+        {
+            "characterName": "Ballora",
+            "description": "is someone there?",
+            "behaviour": "i can hear someone creeping through my room",
+            "id": 1
+        },
+        {
+            "characterName": "Funtime Freddy (and Bon Bon)",
+            "description": "Bon Bon go get him!",
+            "behaviour": "Get ready for a surprise",
+            "id": 2
+        },
+        {
+            "characterName": "Funtime Foxy",
+            "description": "jsdan",
+            "behaviour": "canon jumpscare",
+            "id": 3
+        },
+        {
+            "characterName": "Ennard",
+            "description": "jsdan",
+            "behaviour": "canon jumpscare",
+            "id": 4
+        },
+        {
+            "characterName": "Bidybab",
+            "description": "jsdan",
+            "behaviour": "canon jumpscare",
+            "id": 5
+        },
+        {
+            "characterName": "Minireena",
+            "description": "jsdan",
+            "behaviour": "canon jumpscare",
+            "id": 6
+        }
+        ]
+    },
+    {
+        "name": "Freddy Fazbear's Pizzaria Simulator",
+        "created": 2017,
+        "id": 6,
+        "characters": [
+        {
+            "characterName": "Scrap Baby",
+            "description": "Pinky cheeks",
+            "behaviour": "Corridor",
+            "id": 0
+        },
+        {
+            "characterName": "Scraptrap",
+            "description": "lara lara lara toy bonnie",
+            "behaviour": "right vent",
+            "id": 1
+        },
+        {
+            "characterName": "Molten Freddy",
+            "description": "Chica toy bunny",
+            "behaviour": "left vent",
+            "id": 2
+        },
+        {
+            "characterName": "Lefty",
+            "description": "fox fox dead",
+            "behaviour": "was that the bite of 87!?!",
+            "id": 3
+        }
+        ]
+    },
+    {
+        "name": "Ultimate Custom Night",
+        "created": 2018,
+        "id": 7,
+        "characters": [
+        {
+            "characterName": "Happy Frog",
+            "description": "Pinky cheeks",
+            "behaviour": "Corridor",
+            "id": 0
+        },
+        {
+            "characterName": "Mr Hippo",
+            "description": "lara lara lara toy bonnie",
+            "behaviour": "right vent",
+            "id": 1
+        },
+        {
+            "characterName": "Orville Elephant",
+            "description": "Chica toy bunny",
+            "behaviour": "left vent",
+            "id": 2
+        },
+        {
+            "characterName": "Nedd Bear",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 3
+        },
+        {
+            "characterName": "Pig Patch",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 4
+        },
+        {
+            "characterName": "Rockstar Freddy",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 5
+        },
+        {
+            "characterName": "Rockstar Bonnie",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 6
+        },
+        {
+            "characterName": "Rockstar Chica",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 7
+        },
+        {
+            "characterName": "Rockstar Foxy",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 8
+        },
+        {
+            "characterName": "El Chip",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 9
+        },
+        {
+            "characterName": "Music Man",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 10
+        },
+        {
+            "characterName": "Funtime Chica",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 11
+        },
+        {
+            "characterName": "Nightmarrionette",
+            "description": "fox fox dead",
+            "behaviour": "was that bear",
+            "id": 12
+        }
+        ]
+    },
+    {
+        "name": "Five Nights At Freddy's Help Wanted",
+        "created": 2019,
+        "id": 8,
+        "characters": [
+        {
+            "characterName": "Glitchtrap",
+            "description": "Pinky cheeks",
+            "behaviour": "Coridor",
+            "id": 0
+        }
+        ]
+    },
+    {
+        "name": "Five Nights At Freddy's Security Breach",
+        "created": 2022,
+        "id": 9,
+        "characters": [
+        {
+            "characterName": "Glamrock Freddy",
+            "description": "well done Gregory!",
+            "behaviour": "Ahh my eyes",
+            "id": 0
+        },
+        {
+            "characterName": "Glamrock Chica",
+            "description": "lara lara lara toy bonnie",
+            "behaviour": "right vent",
+            "id": 1
+        },
+        {
+            "characterName": "Roxanne Wolf",
+            "description": "Chica toy bunny",
+            "behaviour": "left vent",
+            "id": 2
+        },
+        {
+            "characterName": "Montgomery Gator",
+            "description": "fox fox dead",
+            "behaviour": "was that the bite of 87!?!",
+            "id": 3
+        },
+        {
+            "characterName": "Vanny",
+            "description": "yet another murder bunny",
+            "behaviour": "dancie dance",
+            "id": 4
+        },
+        {
+            "characterName": "DJ Music Man",
+            "description": "Muuuuuuuuuuuuuuuuuusic maaaan",
+            "behaviour": "silly goose",
+            "id": 5
+        },
+        {
+            "characterName": "The Amalgamation",
+            "description": "dude idek",
+            "behaviour": "lets not discuss the lore significance",
+            "id": 6
         }
         ]
     }

@@ -2,6 +2,7 @@ const data = {
     "gamesseries": "Five Nights At Freddy's Series",
     "author": "Scott Cawthon",
     "created": 2014,
+    "id": 1,
     "games": [
     {
         "name": "Five Nights At Freddy's",
@@ -32,6 +33,7 @@ const data = {
     {
         "name": "Five Nights At Freddy's 2",
         "created": 2014,
+        "id": 2,
         "characters": [
         {
             "characterName": "Toy Freddy",
