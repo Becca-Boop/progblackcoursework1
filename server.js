@@ -4,6 +4,7 @@ const app = express()
 
 const fs = require('fs');
 
+const cors = require('cors');
 //app.use(bodyParser.json());
 //app.use(bodyParser.urlencoded({encoded: true}));
 
@@ -39,23 +40,9 @@ app.get('/index1', async function(req, resp){
     resp.send(json);
 });
 
-app.get('/lara', async function(req, resp){
-    const data = req.app.get('jsondata');
-
-    //const JSONgames = JSON.parse(data);
-
-    const characters = data.games[0].characters;
-    var actualresponse = '';
-
-    // for (const character of characters){
-    //     actualresponse = actualresponse + (`<h2>${character.characterName}</h2> <p>${character.description}</p> <p>Behaviour: ${character.behaviour}</p>`);
-    // }
-    //const json = JSON.stringify(characters[0].characterName)
-    const json = JSON.stringify(characters[0].description);
-    resp.send(json);
-});
 
 app.get('/:game/:character', async function(req,resp){
+    app.use(cors());
     const data = req.app.get('jsondata');
     const JSONgames = data.games
 
@@ -74,6 +61,7 @@ app.get('/:game/:character', async function(req,resp){
 });
 
 app.get('/:game/:character:/info', async function(req,resp){
+    app.use(cors());
     const data = req.app.get('jsondata');
     const JSONgames = data.games
 
@@ -104,6 +92,7 @@ app.get('/:game/:character:/info', async function(req,resp){
 // });
 
 app.get('/:game', async function(req,resp){
+    app.use(cors());
     const data = req.app.get('jsondata');
     const JSONgames = data.games;
     var i = 0;
@@ -119,6 +108,7 @@ app.get('/:game', async function(req,resp){
 });
 
 app.get('/character/:character', async function(req,resp){
+    app.use(cors());
     const data = req.app.get('jsondata');
     //const JSONgames = JSON.parse(data);
 
@@ -137,6 +127,7 @@ app.get('/character/:character', async function(req,resp){
 });
 
 app.get('/w', async function(req, resp){
+    app.use(cors());
     const data = req.app.get('jsondata');
 
     const JSONgames = JSON.parse(data);
@@ -180,15 +171,4 @@ app.get('/index2', async function(req, resp){
     }
     //resp.send(actualresponse);
     resp.send(`<!DOCTYPE html> <html lang="en"><head> <meta charset="UTF-8"><link rel="stylesheet" href="styles"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Five Nights At Freddy\'s Character Guide</title> </head><body><h1>Five Nights At Freddy\'s Character Guide</h1>${actualresponse}<div id = "root"></div><script type="text/javascript" src="routes/routes.js"></script></body></html>`)
-});
-
-app.get('/index3', function(req, resp){
-    const data = req.app.get('jsondata');
-
-    const characters = data.games[0].characters;
-    var actualresponse = '';
-
-    const json = JSON.stringify(data);
-    resp.send(populate2(json));
-    
 });
