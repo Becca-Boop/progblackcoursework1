@@ -6,6 +6,7 @@ h1 {
 }
 p {
     color: whitesmoke;
+    font-size: 20px;
 }
 
 img {
@@ -13,8 +14,17 @@ img {
     height: auto;
 }
 
+characterimg {
+    width: 500px;
+    height: auto;
+}
+
 button {
     background-color:whitesmoke;
     color: #051834;
+    font-size: 16px;
+    padding: 2px 10px;
+    font-family: verdana, "Trebuchet MS", arial, tahoma, sans-serif;
+    
 }
 

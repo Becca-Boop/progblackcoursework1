@@ -1,4 +1,4 @@
-var buttonNum = 9
+var buttonNum = 9;
 
 async function character(game) {
     deleteparagraphs()
@@ -32,7 +32,7 @@ async function getcharacters(game, character){
             
             buttonNum += 1;
             //const selection = document.querySelector("newbuttons")
-            const selection = document.querySelector("section")
+            const selection = document.querySelector("div")
 
             const newButton = document.createElement('button');
             newButton.id = `${buttonNum}`;
@@ -44,7 +44,8 @@ async function getcharacters(game, character){
             //newButton.onclick = getcharacterinformation(game, character);
             console.log(`${thisgame} , ${thischaracter}`)
             newButton.addEventListener('click', () => {
-                deleteparagraphs()
+                deleteparagraphs();
+                buttoncolorchange(newButton.id);
                 getcharacterinformation(newButton.dataset.gameid,newButton.dataset.characterid);
             });
             selection.appendChild(newButton);
@@ -64,11 +65,22 @@ function buttoncolorchange(id) {
     var button1 = document.getElementById(id);
     button1.style.color = "whitesmoke";
     button1.style.backgroundColor = "#051834";
-    for (let i = 1; i<10;i++){
-        if(i!= id){
-            var button2 = document.getElementById(i);
-            button2.style.backgroundColor = "whitesmoke"
-            button2.style.color = "#051834";
+    if (id > 9){
+        for (let i = 10; i<buttonNum+1; i++){
+            if(i!= id){
+                var button2 = document.getElementById(i);
+                button2.style.backgroundColor = "whitesmoke"
+                button2.style.color = "#051834";
+            }
+        }
+    }
+    else{
+        for (let i = 1; i<10;i++){
+            if(i!= id){
+                var button2 = document.getElementById(i);
+                button2.style.backgroundColor = "whitesmoke"
+                button2.style.color = "#051834";
+            }
         }
     }
 }
