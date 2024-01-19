@@ -18,6 +18,7 @@ async function fetchchar(event) {
 };
 
 async function character(game) {
+    deleteparagraphs()
     try {
         let response = await fetch(`http://127.0.0.1:8090/${game}`);
         if(response.ok){
@@ -45,22 +46,27 @@ async function getcharacters(game, character){
         if(response.ok){
             let jsonbody = await response.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
-            //const selection = document.querySelector("section")
-            //const mypara1 = document.createElement("p");
-            //mypara1.textContent = body;
-            //selection.appendChild(mypara1);
             
             buttonNum += 1;
+            //const selection = document.querySelector("newbuttons")
+            const selection = document.querySelector("section")
+
             const newButton = document.createElement('button');
             newButton.id = `${buttonNum}`;
             newButton.textContent = body;
+            newButton.dataset.gameid = game;
+            newButton.dataset.characterid = character
             let thisgame = game;
             let thischaracter = character;
             //newButton.onclick = getcharacterinformation(game, character);
-            newButton.addEventListener('click', (thisgame, thischaracter) => {
-                getcharacterinformation(thisgame,thischaracter);
+            console.log(`${thisgame} , ${thischaracter}`)
+            newButton.addEventListener('click', () => {
+                deleteparagraphs()
+                getcharacterinformation(newButton.dataset.gameid,newButton.dataset.characterid);
             });
-            document.body.appendChild(newButton);
+            selection.appendChild(newButton);
+            //document.body.appendChild(newButton);
+
 
         }
         else{
@@ -98,6 +104,13 @@ function deletecharacterbuttons() {
     };
 };
 
+function deleteparagraphs() {
+    const selection = document.querySelector("section")
+    while (selection.firstChild != null) {
+        selection.removeChild(selection.firstChild);
+    }
+};
+
 async function getcharacterinformation(game, character){
     console.log(`function sent http://127.0.0.1:8090/${game}/${character}`);
 
@@ -119,6 +132,7 @@ async function getcharacterinformation(game, character){
         if(response2.ok){
             let jsonbody = await response2.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
+            console.log(body);
             const selection = document.querySelector("section")
             const mypara1 = document.createElement("p");
             mypara1.textContent = body;
@@ -131,6 +145,7 @@ async function getcharacterinformation(game, character){
         if(response3.ok){
             let jsonbody = await response3.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
+            console.log(body);
             const selection = document.querySelector("section")
             const mypara1 = document.createElement("p");
             mypara1.textContent = body;
