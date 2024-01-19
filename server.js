@@ -98,6 +98,25 @@ app.get('/:game/:character/behaviour', async function(req,resp){
     }
 });
 
+app.get('/:game/:character/image', async function(req,resp){
+    app.use(cors());
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games
+
+    for (const thisgame of JSONgames){
+        if (thisgame.id == req.params['game']){
+            const thisgamecharacters = thisgame.characters;
+            for (const thischaracter of thisgamecharacters){
+                if(thischaracter.id == req.params['character']){
+                    const foundcharacter = thischaracter
+                    const json = JSON.stringify(foundcharacter.image);
+                    resp.send(json);
+                }
+            }
+        }
+    }
+});
+
 app.get('/:game', async function(req,resp){
     app.use(cors());
     const data = req.app.get('jsondata');

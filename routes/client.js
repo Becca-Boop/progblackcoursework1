@@ -1,22 +1,5 @@
 var buttonNum = 9
 
-async function fetchchar(event) {
-    try {
-        let response = await fetch('http://127.0.0.1:8090/index1');
-        if(response.ok){
-        let jsonbody = await response.json();
-        let body = JSON.parse(JSON.stringify(jsonbody));
-        document.getElementById("para").innerHTML=body;
-        var image = document.getElementById("titleimage");
-        image.src = "images/titlesmall.png";
-        } else{
-            alert("Error: 404");
-        }
-    } catch(e) {
-        alert(e);
-    }
-};
-
 async function character(game) {
     deleteparagraphs()
     try {
