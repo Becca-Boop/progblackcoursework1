@@ -148,4 +148,28 @@ app.get('/character/:character', async function(req,resp){
     }
 });
 
+// app.get('/search/:searchtxt', async function(req, resp){
+//     app.use(cors());
+//     const data = req.app.get('jsondata');
+//     const percent20 = '%20'
+//     const space = new RegExp(`+|${percent20}`);
+//     const search = req.params['character'];
+//     console.log(search)
+//     search.replaceAll((space, "g"), ' ')
+//     const re = new RegExp(search);
+//     let json = '';
+//     for (const thisgame of JSONgames){
+//         const thisgamecharacters = thisgame.characters;
+//         for (const thischaracter of thisgamecharacters){
+//             if(thischaracter.search(re) != -1){
+//                 const foundcharacter = thischaracter
+//                 json = `${json} ${foundcharacter.characterName}`;
+//             }
+//         }
+//     }
+//     resp.send(JSON.stringify(json));
+// });
 
+app.get('/search/:searchtxt', async function(req, resp){
+    resp.send('works for a bunny')
+});
