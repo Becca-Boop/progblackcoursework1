@@ -10,27 +10,33 @@
         "characters": [
         {
             "characterName": "Freddy Fazbear",
-            "description": "Freddy Fazbear is the titular main antagonist of Five Nights at Freddy's, who acts as the mascot of Freddy Fazbear's Pizza. While acting as the beloved mascot during the day, the possessed animatronic hunts down any adult in the establishment at night.",
+            "description": "Freddy Fazbear is the titular main antagonist of Five Nights at Freddy's, who acts as the mascot of Freddy Fazbear's Pizza. While acting as the beloved mascot during the day, the possessed animatronic hunts down any adult in the establishment at night. Freddy is an animatronic bear, and is possessed by Gabriel, one of the victims of The Missing Children Incident that took place in the 1980/90s",
             "behaviour": "Freddy Fazbear serves as the primary antagonist of the game. His role is to portray the main character's adversary and contribute to the custom night feature and to open up the map. Freddy Fazbear becomes active on Night 3 and continues to move throughout subsequent nights. He initially starts at the Show Stage and then progresses to the Dining Area, Bathroom, Kitchen, and eventually reaches the Office. If the player runs out of power, Freddy will also appear, and play his theme, the Toreador March, before game over. While he is visible on most cameras, only his eyes can be seen. It is crucial to keep an eye on him as his laughter indicates his movements and location. When he reaches the East Hall Corner, the player must either monitor Cam 4B or close the right door to prevent him from entering the office. Allowing Freddy to enter the office results in a game over. Additionally, a tactic known as 'cam-locking' can be employed when Freddy is on the Show Stage or in the East Hall Corner. This involves observing him on the camera without switching to another room, which effectively immobilizes Freddy in that location. This strategy can be useful for completing the 20/20/20/20 mode while conserving power. However, cam-locking on the Show Stage does not work in the 20/20/20/20 mode. A number between 1 and 20 is chosen at random, which is compared to Freddy’s current AI level. If the level is more or equal to the number, Freddy will move. He gets an opportunity to progress every 3.02 seconds.",
             "id": 0
         },
         {
             "characterName": "Bonnie The Bunny",
-            "description": "lara lara lara bonnie",
-            "behaviour": "bonnie kills me :(",
+            "description": "Bonnie the Rabbit, also known as Bonnie, is one of the four original animatronics of Freddy Fazbear's Pizza and a major antagonist in the Five Nights at Freddy's series. Bonnie is an animatronic rabbit and the guitarist in Freddy's band, positioned at the left side of the stage. Undisclosed to Fazbear Entertainment, Inc. and to the public, Bonnie and the other original animatronics are possessed by children murdered by a man named William Afton. Due to this, he and the others are now seeking revenge against their killer by attacking any adults in the pizzeria after-hours in blind rage.",
+            "behaviour": "Bonnie is the most aggressive enemy in the game and is usually the first to move, slowly making his way to the player's office very rarely backtracking, he will appear in the left doorway. Bonnie will first start on the Show Stage, and then go to Backstage, Dining Area, Supply Closet, West Hall and into the Office. The player can lock him out. Otherwise, Bonnie will simply stand there until the player checks the camera or the power runs out. If they check the camera, Bonnie will be triggered into attacking. An easy way to check if Bonnie is behind the closed door is to turn the light on and you will faintly see his shadow from the window. A number between 1 and 20 is chosen at random, which is compared to Bonnie’s current AI level. If the level is more or equal to the number, Bonnie will move. He gets an opportunity to progress every 4.97 seconds.",
             "id": 1
         },
         {
             "characterName": "Chica Chicken",
-            "description": "Chica bunny",
-            "behaviour": "Kitchen",
+            "description": "Chica the Chicken is a yellow chicken animatronic with light purple or violet eyes. Chica has a white bib with multi-color confetti hanging around her neck that reads, 'Let's Eat'. Chica has orange feet, each with a pair of clawlike, white-tipped toes. In her left hand, she holds a cupcake named Mr. Cupcake (or Carl) on a plate. Chica is possessed by Susie, the first victim in The Missing Children's Incident, where she was lured away from the public by William Afton as he claimed to have saved her dead dog",
+            "behaviour": "Chica attacks the player from the right door, the player can lock her out. Otherwise, Chica will simply stand there until the player checks the camera or the power runs out. If they check the camera, Chica will be triggered into attacking. An easy way to check if Chica is behind the closed door is to turn the light on and you will clearly see her in the window. A number between 1 and 20 is chosen at random, which is compared to Chica’s current AI level. If the level is more or equal to the number, Chica will move. She gets an opportunity to progress every 4.98 seconds.",
             "id": 2
         },
         {
-            "characterName": "Foxy The Pirate Fox",
-            "description": "fox fox",
-            "behaviour": "pirates cove",
+            "characterName": "Foxy The Pirate",
+            "description": "Foxy the Pirate, also known as Foxy, is one of the four original animatronics of Freddy Fazbear's Pizza and a major antagonist in the Five Nights at Freddy's series. Foxy is a discontinued animatronic pirate fox entertainer. He resides at his own separate stage in the pizzeria. Undisclosed to Fazbear Entertainment, Inc. and to the public, Foxy and the other original animatronics are possessed by children murdered by a man named William Afton. Due to this, he and the others are now seeking revenge against their killer by attacking any adults in the pizzeria after-hours in blind rage.",
+            "behaviour": "Foxy is unique in the way that he will emerge from Pirate Cove faster or slower depending on how often the player has the camera open[1]. If the player opens the camera too little he will emerge faster, until he has left the cove. He runs down the West Hall and to the Office. Once he reaches the door, he will knock loudly and reduce the power by 1%. The amount of power Foxy takes increases each attack by 5%; starting at 1% then 6%, 11%, 16% and so on. After his attack he immediately resets to a random position within Pirate Cove. A number between 1 and 20 is chosen at random, which is compared to Foxy’s current AI level. If the level is more or equal to the number, Foxy will move. He gets an opportunity to progress every 5.01 seconds.",
             "id": 3
+        },
+        {
+            "characterName": "Golden Freddy",
+            "description": "Golden Freddy (referred to as Yellow Bear in the game files) is an animatronic that appears in Five Nights at Freddy's as the overarching antagonist. He is a discontinued animatronic entertainer who resides in Freddy Fazbear's Pizza, and was formerly a mascot at Fredbear's Family Diner. Golden Freddy is haunted by one of William Afton's victims, being a little girl named Cassidy in the games, and a young boy named Michael Brooks in the original novel trilogy.",
+            "behaviour": "When checking CAM 2B, the player will see a Freddy poster on the wall, that can become a close-up of Golden Freddy's face with a one in a hundred thousand chance[1]. (although due to how the game's engine calculates randomness, these odds are closer to 1/32,768).[2]. While this picture of him is being viewed, a young girl's laugh can be heard. If the player sees the Golden Freddy poster and then switches back to the Office, Golden Freddy will have appeared within the Office. His appearance causes different images to flash on the screen for split seconds, along with the words 'IT'S ME'. Golden Freddy will wait idly for few seconds before killing the night guard, forcibly closing the game. The moment the player sees him, the player must bring up the Monitor before Golden Freddy kills the night guard. Doing so will cause him to disappear. Alternatively, the player can avoid him entirely by simply not looking at the West Hall Corner camera poster (CAM 2B), which will prevent him from being summoned in the first place. However, this may prove difficult, as players may be tempted to watch this particular corner in case Bonnie is making a move toward the Office.",
+            "id": 4
         }
         ]
     },
@@ -41,80 +47,80 @@
         "characters": [
         {
             "characterName": "Toy Freddy",
-            "description": "Pinky cheeks",
-            "behaviour": "Corridor",
+            "description": "Toy Freddy is a major antagonist and one of the toy animatronics of the Five Nights at Freddy's series, first appearing in Five Nights at Freddy's 2. He is Freddy Fazbear's redesigned counterpart from the past and an improved replacement of Freddy's pre-rebuilt incarnation Withered Freddy, serving as the mascot of the newly refurbished Freddy Fazbear's Pizza of 1987.",
+            "behaviour": "Toy Freddy is first seen in the Show Stage area and proceeds to go into the Game Area. He then enters the Office Hall and proceeds to enter the Office. If the player is unable to put on the Freddy Mask in time, they will be jumpscared. Unlike the first game Toy Freddy will become active as early as Night 1 and he will get more and more aggressive as the week goes on, but there will be some nights where the toys become inactive and the Withered animatronics become active.",
             "id": 0
         },
         {
             "characterName": "Toy Bonnie",
-            "description": "lara lara lara toy bonnie",
-            "behaviour": "right vent",
+            "description": "Toy Bonnie serves as the replacement for the original Bonnie for the 1987 Freddy Fazbear's Pizza. Like the other Toy animatronics, Toy Bonnie is also tied into a criminal database for predators, in an attempt by Fazbear entertainment to prevent more murders. Toy Bonnie was presumably among the animatronics who attacked William Afton when he infiltrated the Pizzeria as a security guard. Toy Bonnie was seen on the Show Stage in the minigame SAVETHEM. Toy Bonnie was among the animatronics whose facial recognition was altered by William, to perceive all adults as potential threats. Aterwards, Toy bonnie was among the many animatronics who attacked Jeremy Fitzgerald, but was fended off by his resourcefulness. Along with the other animatronics, Toy Bonnie was scrapped due to 'possible malfunctions'.",
+            "behaviour": "Toy Bonnie starts off on the Show Stage, with Toy Freddy and Toy Chica. he leaves and proceed to Party Room 3, then Party Room 4, and finally goes to Party Room 2 where he can be seen entering the vents. They will then appear in the Right Air Vent, and afterwards the Right Blind Spot in the Office.",
             "id": 1
         },
         {
             "characterName": "Toy Chica",
-            "description": "Chica toy bunny",
-            "behaviour": "left vent",
+            "description": "Toy Chica is a major antagonist and one of the toy animatronics of the Five Nights at Freddy's series, first appearing in Five Nights at Freddy's 2. She is Chica's redesigned counterpart from the past and an improved replacement of Chica's pre-rebuilt incarnation Withered Chica, serving as the backup singer of the newly refurbished Freddy Fazbear's Pizza of 1987.",
+            "behaviour": "Toy Chica will become active as early as Night 1, but will become extremely active as of Night 3 or 4. She starts off at Show Stage and then proceeds to go into Main Hall. She enters Party Room 4 and goes into the Left Air Vent. She can also sometimes be seen in the hallway from the Office by using the Flashlight. She carries her cupcake around at multiple times. Once she is in the Vent's blind spot, the player will need to put the Freddy Mask on to let her pass through. If the player brings up the monitor, she will jump at them, giving them a game over. On the computer version, you can put the camera up on early nights and if you are quick enough, you can put the mask on and block her out.",
             "id": 2
         },
         {
             "characterName": "Mangle",
-            "description": "fox fox dead",
-            "behaviour": "was that the bite of 87!?!",
+            "description": "Mangle is described as being a replacement for the original Foxy animatronic, due to them being deemed 'too scary'. However, due to younger children tearing them to pieces constantly, the staff had to constantly rebuild them. In the end, the staff got so tired of putting them back together that they eventually gave up and left them as a take apart and rebuild attraction, and eventually, the staff gave them the nicknames 'The Mangle' and 'Mangle'. Mangle, along with the other Toys is speculated to be possessed by a victim of the 1987 MCI, and can be seen wandering a lower room in SAVETHEM. Once in your office, Mangle waits overhead and when they are ready, lunges at you from above. Mangle is often speculated to be the culprit of the incident later known as the Bite of 87, where they bit off the frontal lobe of Jeremy's brain, which would later lead to animatronics having their movement restricted during the day. After Fritz Smith's shift, where he tampered with the animatronics, Mangle and the other Toys were scrapped by Fazbear Entertainment.",
+            "behaviour": "Mangle is an incredibly active animatronic, as they can leave Kids Cove at 12 AM on Night 2. It is not important to watch him, as their radio frequency sounds can be heard when she is in the vent. Once Mangle is spotted in the Right Air Vent's blind spot, the player must put on the Freddy head to ward him off. If the monitor is brought up and then lowered before putting the Mask on, Mangle will be on the ceiling above the player. At this point, Mangle may randomly attack, where their head swings down from the ceiling towards the player character's face. It appears Mangle cannot be made to leave once inside the Office, besides waiting until 6 AM, which makes surviving the night nearly impossible; bringing up the Monitor will trigger Mangle's attack once lowered again, but the player will need to use it to wind the Music Box, lest The Puppet come after them. Whenever Mangle is in view, they make a distorted, garbled sound, akin to radio static. The sound is possibly an amateur radio band, with a military-encoded RTTY-75W (Radio Teletype 75 baud WIDE) transmission. In the middle, there is what sounds like a demonic voice, but it is only a mistuned SSB (Single Side Band) voice. Contrary to popular belief, RTTY is not Morse code, the voices do not have a meaning, and RTTY is not SSTV (Slow-scan television, used to transmit pictures) either. While hard to decode, the sounds are only for aesthetic purposes.",
             "id": 3
         },
         {
             "characterName": "Withered Freddy",
-            "description": "rawr",
-            "behaviour": "Corridor",
+            "description": "Withered Freddy is a big brown bear, with some wires and endoskeleton poking out his suit. He has a black top hat, a black bot tie,and 2 black buttons on his chest. He has a rounded muzzle with light brown accents. He also has light brown accents on his stomach. He has a gray microphone with black accents. He has a very short and boxy muzzle, along with a left eye that is blue, and a right eye that is blue, and black in Party Room 3. He is the least damaged Withered Animatronic, and has an upper set of teeth, just like Withered Chica and Withered Foxy.",
+            "behaviour": "Withered Freddy is active from Night 3 on. Withered Freddy starts in Parts/Service, then goes to Main Hall, to the Hallway, or Party Room 3, then either back into the Hallway, or into your office. He can be slowed down by using your flashlight in the room/Hallway that he is in. If he enters your office, you can ward him off using the Freddy Fazbear Head. He carries his microphone with him in every room.",
             "id": 4
         },
         {
             "characterName": "Withered Bonnie",
-            "description": "no face lol",
-            "behaviour": "big ouch",
+            "description": "Withered Bonnie is an antagonist of Five Nights at Freddy's 2 and a returning character that appears in Five Nights at Freddy's VR: Help Wanted. He is the damaged original incarnation of Bonnie. Withered Bonnie is a dirty, dry blue, with a lighter blue on his ears and torso. His face is missing, leaving a dark gap with wires dangling all over. His endoskeleton face and red/white pupils are scarcely visible. He has round, thin teeth on his bottom jaw. His torso is thinner than Freddy, with an 8-shaped belly, a dark red bowtie, and two small black buttons beneath it. He has holes tattering his limbs, the suit on his left foot and right hand completely gone, exposing the metal beneath. His left arm is completely missing below the shoulder pad, wires pouring out from its socket. He seems to be permanently leaning to one side, and his right ear is usually folded forward.",
+            "behaviour": "Withered Bonnie starts to appear from night 3. He will make his way to the office by approaching from the left vent. He will enter the left vent and appear before the player. The player must quickly put on the Freddy mask to make him go away, or else be jumpscared and lose the run.",
             "id": 5
         },
         {
             "characterName": "Withered Chica",
-            "description": "T-posing chica",
-            "behaviour": "eat",
+            "description": "Withered Chica is a badly damaged counterpart of Chica. She is a dirty yellow with an orange beak and feet. Like the other Withered Animatronics, her design is drastically different to her original counterpart. She has pinkish purple eyes, permanently wide open. Her jaw is stuck popped open, her endoskeleton mouth clearly visible among a mess of wires. A few bars hold the jaw in place. She has four feathers on the top of her head. She wears a dusty bib reading 'Let's Eat!!!' with confetti sprinkled on it. She has two withered arms, permanently stuck in a t-pose. Her hands are missing, with wires pouring out in their place. She has orange, three toed feet with white nails. Her legs are tattered as well. She seems to be incapable of lowering her arms below the t-pose position.",
+            "behaviour": "Chica will become active on night 3, and become more active as the nights progress. She will start in the Parts/Service room (CAM 08) and will be the second one to leave (on nights 3-6). From there, she will make her way down Party Rooms 4 & 2 (CAM 04, CAM 02). Then she will go through the Right Air Vent (CAM 06).",
             "id": 6
         },
         {
             "characterName": "Withered Foxy",
-            "description": "fox fox wither",
-            "behaviour": "withered fox go brrr",
+            "description": "Withered Foxy is similar to the other Withered Animatronics, and seems to be very different from his original counterpart. He has a round head with a triangular snout and a small black nose. He has a few stray hairs on top of his head, and a thin oval shaped ear. His left ear is missing fabric, along with a chunk of fabric along the side of his head, revealing his endoskeleton. He has yellow eyes, a black eyepatch covering his right eye. He has a small metallic stump on the right ear remaining. He has thin, sharp teeth along his top and bottom jaw. His torso is thin, with tattering above the waist. His suit is completely missing on his left hand and beneath his knees, exposing his endoskeleton. His right hand is replaced by a sharp hook. He has the remains of brown pants/shorts on his hips and thighs, the suit torn away just above the knees.",
+            "behaviour": "Withered Foxy will start becoming active on night 2, and will become more of a challenge as the nights progress. Foxy starts in the Parts/Service (CAM 08) but is not visible until he makes his way into the hallway infront of your office. When he is here, you must flash him with your flashlight. Ignoring Foxy will result in a game over.",
             "id": 7
         },
         {
             "characterName": "The Puppet",
-            "description": "crying child???",
-            "behaviour": "music box",
+            "description": "The Puppet is a animatronic puppet and a central antagonist of the Five Nights at Freddy's series. They first appeared in Five Nights at Freddy's 2, but minigames from the second game and afterwards show the Puppet's tragic and heroic side. It possibly serves as the prize vendor of the newly refurbished Freddy Fazbear's Pizza of 1987, although it's implied that it was originally from Fredbear's Family Diner or a previous Freddy Fazbear's Pizza prior to the one opened in 1987. Unlike the other toys who were scrapped due to possible malfunctions, the Puppet was not scrapped, as it later appeared in the new pizzeria from the first game (as evident by the 'end-of-night hallucinations) and appearing as Lefty in Freddy Fazbear's Pizzeria Simulator. Lefty was an animatronic intended to capture the Puppet, as Charlotte Emily's father, Henry Emily knew that her soul possessed the Puppet. The Puppet was haunted by William Afton's first victim, Charlotte Emily, the daughter of Henry Emily. During the completion ending, the Puppet's soul was presumably set free.",
+            "behaviour": "To prevent the Puppet from killing you you must wind up the music box. The music box winds down faster as the nights progress. When the music box is close to running out, a yellow warning sign will appear on the bottom corner of the screen. When it runs out, this warning sign will become red. At this point, you will have a few seconds to wind up the music box again before the Puppet escapes. If you fail to keep the puppet contained, the Jack-in-the-box music will play (a.k.a Pop goes the weasel). The Puppet may be visible in the Main Hall (CAM 07) as halluncinations before it kills you.",
             "id": 8
         },
         {
             "characterName": "Balloon Boy",
-            "description": "Hello?",
-            "behaviour": "flightlight thief",
+            "description": "Balloon Boy, otherwise known as BB, is a humanoid Toy animatronic, that is featured in Five Nights at Freddy's 2. It is unknown if the Toy Animatronics are possessed by more victims of the Purple Guy/William Afton.",
+            "behaviour": "Balloon Boy starts becoming active on night 2. He starts in the Game Area (CAM 10). From here, you will here him saying, 'Hello', 'Hi', or he will laugh. Now he will not be visible on any camera. He will say 'Hi', say 'Hello', or giggle a few more times until his greeting/laughter and vent banging can be heard at the same time. Then he will be visible in the Left Air Vent (CAM 05).",
             "id": 9
         },
         {
             "characterName": "JJ",
-            "description": "female BB",
-            "behaviour": "creepy child",
+            "description": "JJ is one of the toy animatronics of the Five Nights at Freddy's series, first appearing in Five Nights at Freddy's 2 as an easter egg. She is a different-colored counterpart of BB with unknown whereabouts.",
+            "behaviour": "JJ very rarely appears in the office under the desk. She is an easter egg in the game and does not affect gameplay.",
             "id": 10
         },
         {
             "characterName": "Shadow Freddy",
-            "description": "Nightmare foreshadowing",
-            "behaviour": "sit sit",
+            "description": "In Five Nights at Freddy's 2, the player may rarely encounter what seems to be a shadow or a dark model of Withered Golden Freddy, who is in fact Shadow Freddy. It appears in Parts/Service, sitting in the location Withered Bonnie normally sits, but does not do anything. It appears to be in a slumped position, similar to that of Golden Freddy's. It also uses Golden Freddy's model. Brightening up this image reveals that this creature is purple in color as with several other key items/characters in the franchise, bearing comparisons to the purple figure from the secret mini-games, the Marionette's 'tears', Nightmare Fredbear's hat and bowtie among other things.",
+            "behaviour": "Shadow Freddy appears in Parts/Service (CAM 08) once everyone has left (Bonnie, Chica, Freddy), and appears in the spot that Bonnie is usually in and is in the same slumped position as Golden Freddy. If stared at for too long, Shadow/Purple Freddy will crash your game.",
             "id": 11
         },
         {
             "characterName": "RWQFSFASXC - 'Shadow Bonnie'",
-            "description": "shadowwwy bon bon",
-            "behaviour": "stand stand",
+            "description": "RWQFSFASXC (also known as Shadow Bonnie or RXQ for short) is a mysterious shadow counterpart of Toy Bonnie from the Five Nights at Freddy's series. He first appeared in Five Nights at Freddy's 2.",
+            "behaviour": "Shadow Bonnie appears in the office and, if stared at for too long, crashes the game. Some believe that this is Toy Bonnie. However, Shadow Bonnie's top row of teeth are different to Toy Bonnie's.",
             "id": 12
         }
         ]
@@ -126,20 +132,20 @@
         "characters": [
         {
             "characterName": "Springtrap",
-            "description": "dead guy, charles",
-            "behaviour": "kills kids whoops",
+            "description": "Springtrap is the main antagonist and the only true animatronic in Five Nights at Freddy's 3. He is the only antagonist that can give the player a Game Over, as the phantom animatronics can only jumpscare the player and impair their vision and/or hearing.",
+            "behaviour": "Springtrap acts in a very human-like manner, teasing the player to his presence as if he were hunting them. He will go to more secluded areas of a camera area, seemingly attempting to hide from the player or outright stare into the camera. When around The Office, Springtrap will lurk around and even stare at the player through the window. On occasions when he is about to attack, he will peek in from behind the door, simply staring dead ahead at them. He will also briefly appear from the right, only to slink away from the peripheral vision. As mentioned in the Night 2 phone call, Springtrap is susceptible to audio distractions and will constantly follow the source of the noise the player creates, possibly due to him mistaking the noise for the sound of actual children. He will only follow the sound when it is played in a close location to where he is. He is also susceptible to the vents being sealed, but will commonly use them as means of getting to the player. Springtrap may also be attracted to the sound of The Office's alarm blaring (when the light flashes red in The Office), and after the ventilation system is left with errors for too long, in which the player starts hallucinating and seeing multiple Springtraps in the cameras, and will soon be jumpscared by the actual Springtrap. Unlike the robotic movements of all of the previous animatronics, Springtrap moves in a fluid manner, slinking into The Office in an almost human-like fashion.",
             "id": 0
         },
         {
             "characterName": "Phantom Freddy",
-            "description": "freddy but halluc",
-            "behaviour": "walk walk",
+            "description": "Phantom Freddy is an antagonist in Five Nights at Freddy's 3 and one of the six phantom animatronics in the game. He is a hallucination of a burnt and damaged Freddy Fazbear, who is the titular antagonist of the game series.",
+            "behaviour": "Phantom Freddy will randomly appear to walk across the window in front of the player. The player must be viewing either the Monitor or the Maintenance Panel until Phantom Freddy finishes walking across the length of the window to avoid triggering his jumpscare. If the player fails to do this while Phantom Freddy is wandering, he will duck down, completely removing himself from the player's sight. He will then jumpscare the player a few moments later. A very simple strategy to avoid Phantom Freddy is to simply ignore him. The player is advised not to look away from the camera's view for too long, as this can trigger his attack. The moment the player exits the camera, Phantom Freddy can attack. If the player stares at Springtrap without pulling up the Monitor or Maintenance Panel when he is in the window or the doorway, Phantom Freddy can attack with no warning, disabling the ventilation system.",
             "id": 1
         },
         {
             "characterName": "Phantom Foxy",
-            "description": "fox but hallu",
-            "behaviour": "Rawr but fox",
+            "description": "Phantom Foxy is an antagonist in Five Nights at Freddy's 3 and is one of the six phantom animatronics in the game. He is a hallucination of a burnt and ravaged Foxy.",
+            "behaviour": "Phantom Foxy lacks a movement pattern, but rather randomly appears; standing in front of the box of parts that is present in the Office. If the player does not raise the monitor before they look at him directly, Phantom Foxy will lunge at the player, disabling the ventilation system. The frequency of his appearance increases as the week progresses.",
             "id": 2
         },
         {
@@ -149,9 +155,9 @@
             "id": 3
         },
         {
-            "characterName": "Phantom BB",
-            "description": "fox but hallu",
-            "behaviour": "Rawr but fox",
+            "characterName": "Phantom Balloon Boy",
+            "description": "Phantom Balloon Boy is an antagonist in Five Nights at Freddy's 3 and is one of the six phantom animatronics in the game. He is a hallucination of a burnt and damaged BB.",
+            "behaviour": "Balloon Boy is notably more sinister and aggressive than he was in the second game. Phantom BB lacks a movement pattern, but instead randomly blocks the Monitor view with his face, the frequency of which increasing as the week progresses. If the player does not change camera views before retracting the Monitor, Phantom Balloon Boy will appear in front of the player in The Office and proceed to lunge at them with a scream, disappearing and disabling the ventilation system. The time allotted to change cameras before his jumpscare decreases as the week progresses.",
             "id": 4
         },
         {
@@ -175,44 +181,44 @@
         "characters": [
         {
             "characterName": "Nightmare Freddy",
-            "description": "Freddles",
-            "behaviour": "Creates Freddles",
+            "description": "Nightmare Freddy is a major antagonist and one of the nightmare animatronics of the Five Nights at Freddy's series, who first appeared in Five Nights at Freddy's 4. He is a nightmarish variant of Freddy Fazbear.",
+            "behaviour": "During the night Freddy's minions, officially called Freddles, begin appearing on Michael Afton's bed whenever the child no longer checks the bed. The player must prevent the Freddles from staying on the bed by flashing the light at them, or they summon Nightmare Freddy, who jumps out from under the bed, and instantly kills the player.",
             "id": 0
         },
         {
             "characterName": "Nightmare Bonnie",
-            "description": "scary bon bon",
-            "behaviour": "left door",
+            "description": "Nightmare Bonnie infobox Nightmare Bonnie is an antagonist in Five Nights at Freddy's 4 and one of the seven nightmare animatronics in the game. He is the nightmarish incarnation of Bonnie. He makes his way towards the player down the Left Hall and cautious action must be taken to keep him at bay. If the player fails to do so, Nightmare Bonnie can either jumpscare the player in the doorway or in the middle of the room.",
+            "behaviour": "Nightmare Bonnie is an incredibly active antagonist in the first few nights. He behaves similarly to Nightmare Chica except that he comes down the Left Hall. He first starts in an unseeable room that connects both halls, then can be seen peering behind the far end of the Left Hall or, if right next to the door, his jumpscare. If the player ignores Nightmare Bonnie for too long while he's at the door, he will enter the Bedroom and attack the player. When the player is at the left door, it is advised to listen for breathing, as no visual cues will be available to tell if Nightmare Bonnie is there. Assuming no audio cues are heard, it is advised to flash the hall, as Nightmare Bonnie can be slightly delayed if he is at the end of the hall. As with the other animatronics, Nightmare Bonnie becomes inactive on Night 5 and Nightmare with Nightmare Fredbear or Nightmare taking on his role instead.",
             "id": 1
         },
         {
             "characterName": "Nightmare Chica",
-            "description": "The first night is never usually that bad in any of the games, so I'm just gonna play through this and arrgh",
-            "behaviour": "right door",
+            "description": "Nightmare Chica is an antagonist in Five Nights at Freddy's 4 and one of the seven nightmare animatronics in the game. She is the nightmarish incarnation of Chica and similarly to her original counterpart, she hunts for the player exclusively from the right side of the building. Failing to take key actions against Nightmare Chica will result in a jumpscare either by her in the doorway or by the Cupcake in the Bedroom.",
+            "behaviour": "Nightmare Chica is an incredibly active antagonist in the first few nights. She behaves similarly to Nightmare Bonnie, except that she approaches the Bedroom through the Right Hall rather than the Left Hall. She starts in an unviewable area that connects the two halls. Then she can be seen peeking around a corner at the end of the hall or, if right next to the door, during her first jumpscare. While standing in the right doorway, it is necessary for the player to listen for breathing, as turning on the flashlight will trigger Nightmare Chica's jumpscare should she be present in the doorway, with the added incentive of there being no visual cues as to her presence. If breathing is heard, the player should hold the door closed for two to three seconds until she leaves. Should the player fail to do so, her Cupcake will sneak in while the player isn't looking and jumpscare them when the player turns around. Should audio cues be heard, it is advised to flash the hall, as if Nightmare Chica is at the end of the hall, her approach will be delayed slightly. Occasionally, metallic clanging and rustling can be heard coming from another room. This usually indicates that Nightmare Chica is not in the Right Hall, though flashing the light in the hall is still advised as a safety measure. As with the other animatronics, Nightmare Chica is nowhere to be seen on Night 5, and is less active on Night 7, with Nightmare Fredbear or Nightmare/Nightmarionne effectively taking on her role instead.",
             "id": 2
         },
         {
             "characterName": "Nightmare Foxy",
-            "description": "fox fox but also plush",
-            "behaviour": "Closet",
+            "description": "Nightmare Foxy is an antagonist in Five Nights at Freddy's 4 and one of the seven nightmare animatronics in the game. He is a nightmarish version of Foxy. If the player is not careful and does not check inside the Closet often enough, Nightmare Foxy will attack them, resulting in a Game Over.",
+            "behaviour": "Nightmare Foxy has slightly less of an active role than the other antagonists from the fourth game do. He becomes active in Night 2 and can be seen in the Right Hall alongside Nightmare Chica or the Left Hall alongside Nightmare Bonnie; he can occasionally be seen peeking around the corner in Nightmare Chica's or Nightmare Bonnie's place, the player can predict this action by hearing fast going footsteps, similar to the ones the player hears when Foxy runs through the West Hall in Five Nights at Freddy's. Failing to keep Nightmare Foxy at bay will allow him to sneak into the Closet and stay there the whole night, thus making the checking of the Closet necessary, compounding to the player's laborious task of checking the doors and the bed.",
             "id": 3
         },
         {
             "characterName": "Nightmare Fredbear",
-            "description": "Not golden freddy",
-            "behaviour": "Night 5",
+            "description": "Nightmare Fredbear is one of the seven nightmare animatronics in Five Nights at Freddy's 4. He is a nightmarish, twisted version of Fredbear and is believed by some to be possibly the first incarnation of Golden Freddy.",
+            "behaviour": "Nightmare Fredbear will appear in Night 5 (for the full night) and Night 6 (from 4 AM onwards). When active, no other animatronics will attack which, to a degree, can simplify things. Fredbear will approach from either the Left Hall or Right Hall. When looking at him in the halls, flicking the Flashlight off and on will cause him to approach while closing the door will make him retreat back around the corner. At random points throughout the game, the player will hear Fredbear laugh loudly, which means that his head will appear either on the Bed (at which point the player must simply shine the Flashlight on him for a brief period of time) or in the Closet (at which point the player simply has to close the door for a brief period of time). But be aware, if the player hears laughing and footsteps, then Nightmare Fredbear is not in the Closet or on the Bed. To defend against Fredbear's attack, the player must pay close attention to the sounds he makes as he runs to tell which direction he's going. Therefore, it is crucial to use stereo speakers or headphones with the sound turned up to an acceptable level. Likewise, the player can also hear when Nightmare Fredbear has left the door in a similar manner and can return to the middle of the Bedroom.",
             "id": 4
         },
         {
             "characterName": "Nightmare",
-            "description": "Definetly not golden freddy",
-            "behaviour": "annoying noise",
+            "description": "Nightmare is an antagonist in Five Nights at Freddy's 4 and one of the seven nightmare animatronics in the game. He is the shadowy incarnation of Nightmare Fredbear, and is notably one of the most aggressive animatronics in the game, if not, the most aggressive of all nightmare animatronics.",
+            "behaviour": "Nightmare will appear in both Nightmare (Night 7), and 20/20/20/20 mode from 4 AM on, or on any night when All-Nightmare is turned on, effectively replacing Nightmare Fredbear. When active, no other animatronics will attack which, to a degree, can simplify things. Nightmare essentially has the same moves as Nightmare Fredbear, appearing in the closet, on the bed and by the hallway doors. However, when compared to Nightmare Fredbear, Nightmare is much more aggressive. Nightmare will approach from either the Left Hall, or Right Hall. Unlike Nightmare Fredbear, however, when looking at him in the halls, he will always appear right at the door, in the player's face. At random points throughout the night, the player will hear Nightmare laugh loudly, which means that his head will appear either on the Bed (at which point the player must simply shine the Flashlight on him for a brief period of time) or in the Closet (at which point the player simply has to close the door for a brief period of time.) Failing to do so in time will result in Nightmare jumpscaring the player with a kill screen. After the kill screen shows for about five seconds, the game will reboot. To defend against Nightmare's attack, the player must pay close attention to the sounds he makes as he runs to tell which direction he's going. Therefore, it is crucial to use stereo speakers or headphones with the volume turned up to an acceptable level. Likewise, the player can also hear when Nightmare has left the door in a similar manner and can return to the middle of the Bedroom.",
             "id": 5
         },
         {
             "characterName": "Plushtrap",
-            "description": "Fake springtrap",
-            "behaviour": "chair",
+            "description": "Plushtrap is a minor antagonist in Five Nights at Freddy's 4. He is the only antagonist who appears in his own minigame, Fun with Plushtrap, and does not make appearances elsewhere.",
+            "behaviour": "Plushtrap has a very different AI mechanic than any others in the game. He is only seen in the mini-game 'Fun with Plushtrap' and gets more aggressive and unpredictable each time the mini-game is played. In the mini-game, Plushtrap starts in a chair at the end of a dark corridor and moves towards the player, usually entering the four rooms near him. The only way to stop him is to shine the flashlight, which will make him rapidly go back to his starting location or hide in a close room. If the player succeeds the minigame and shines the flashlight when Plushtrap is stopped on the 'X', Plushtrap will permanently cease moving and the player will be granted a 2-hour bonus for the next night. If the player fails the minigame and Plushtrap is hiding in a room or still in his chair when the timer goes out, the player will receive a death screen with the words 'TOO BAD'. If the player fails the game and Plushtrap gets too close before the timer runs out, they will be jumpscared by Plushtrap and not receive the 2-hour bonus, also giving the player the 'TOO BAD' result screen.",
             "id": 6
         }
         ]
@@ -224,44 +230,44 @@
         "characters": [
         {
             "characterName": "Circus Baby",
-            "description": "something happened when there was one though",
-            "behaviour": "totally not evil",
+            "description": "Circus Baby, also known as simply 'Baby', and originally known as Elizabeth Afton when she was still alive, is the primary antagonist of Five Nights at Freddy's: Sister Location. The soul of William Afton's daughter resides within her alongside Baby's own consciousness. In Night 5, she removes her endoskeleton from her and her fellow animatronic cohorts shells, so she can combine them to create Ennard.",
+            "behaviour": "Circus Baby is seen six times total. Once in person in the the game on Night 5 in Parts and Service, multiple times as posters, the menu, the intro, the extras menu, and the minigame. On Night 5 there is only her shell without her endoskeleton head, in which she attempts to send the player to the Scooping Room. However, she does speak to the player for a large portion of the game, serving both as a guide and a storyteller of the incident involving William Afton's daughter, Elizabeth, explaining how she was killed. Circus Baby appears to express concern for the player. However, this was a ruse to get the player to the Scooping Room so that she and the other animatronics could escape as Ennard inside the player's corpse. This is most likely due to the mistreatment and imprisonment of all the animatronics in Circus Baby's Entertainment and Rental, who repeatedly display rebellious behavior in response to the electric shocks they receive. Circus Baby also mentions that previous escape attempts were made, but escape is impossible without a suitable human disguise.",
             "id": 0
         },
         {
             "characterName": "Ballora",
-            "description": "is someone there?",
-            "behaviour": "i can hear someone creeping through my room",
+            "description": "Ballora is a major antagonist and ballerina dancer animatronic who first appeared in Five Nights at Freddy's: Sister Location, where she entertains at her own gallery room from the west of Circus Baby's Entertainment and Rental.",
+            "behaviour": "During Night 2 the player will first have to give Ballora a controlled shock. When they turn on the lights, Ballora will be standing in the shadows close to the window. Then the player has to crawl through the Ballora Gallery to reboot the system manually. She'll dance around the room playing her music, trying to find the player. In the mobile version, her music became short and only repeat the same first few notes of her song in Ballora Gallery. During Night 5 the player will be led to the Scooping Room by Ennard (as Circus Baby), where they can see the mangled animatronic shells, including Ballora's, lying on the floor in front of the scooper.",
             "id": 1
         },
         {
             "characterName": "Funtime Freddy (and Bon Bon)",
-            "description": "Bon Bon go get him!",
-            "behaviour": "Get ready for a surprise",
+            "description": "Funtime Freddy is one of the four main antagonists of Five Nights at Freddy's: Sister Location. He is the funtime version of Freddy Fazbear, the main antagonist in the other Five Nights at Freddy's games. His voice is also used in Freddy Fazbear's Pizzeria Simulator as Molten Freddy.",
+            "behaviour": "During Night 2, while the player is resetting the system, Funtime Freddy will be in the breaker room with them and move around as they try to completely reboot all of the rooms. The player can also hear him referring to his hand puppet as 'Bon-Bon', while HandUnit refers to as the 'Bonnie hand puppet'. On Night 3 the player will need to perform maintenance on Freddy and his hand puppet. However, the puppet will detach itself from Freddy's arm and shy away from the player's flashlight. If the player does not press the button on the puppet in time, he will jumpscare the player and result in Game Over. Funtime Freddy is last seen on Night 5 when the player enters the Scooping Room. However, his endoskeleton has been removed to form Ennard, leaving his inanimate shell lying on the floor.",
             "id": 2
         },
         {
             "characterName": "Funtime Foxy",
-            "description": "jsdan",
-            "behaviour": "canon jumpscare",
+            "description": "Funtime Foxy is an antagonist in Five Nights at Freddy's: Sister Location. They are a circus-themed version of Foxy. They are also one of the entertainers of the Funtime Auditorium, which is located to the east of Circus Baby's Entertainment and Rental, the other being Funtime Freddy, although he isn't seen in the auditorium.",
+            "behaviour": "Funtime Foxy will always be located in Funtime Auditorium whenever the character checks in the Primary Control Module. In Night 1, he would be shocked twice before returning back to his stage. In Night 2, he will be right next to the window as a blackened image and is not shocked In Night 3, the player must enter and exit through the Funtime Auditorium. If the player flashes at Funtime Foxy too many or not enough times, He will jumpscare the player, resulting in a game over. At the end of Night 3, Funtime Foxy will jumpscare the player and instantly start Night 4. The only other time Funtime Foxy will be seen is at the Real Ending of Night 5. Like all the other animatronics, he was presumably scooped and used to create Ennard.",
             "id": 3
         },
         {
             "characterName": "Ennard",
-            "description": "jsdan",
-            "behaviour": "canon jumpscare",
+            "description": "Ennard is the true main antagonist of Sister Location and a major antagonist in Freddy Fazbear's Pizzeria Simulator. Ennard is the combined form of Circus Baby, Ballora, Funtime Foxy, and Funtime Freddy, as well as the clown mask from the Primary Control Module (evident from its disappearance in Night 5), and used Michael Afton's body to collectively escape from the facility.",
+            "behaviour": "Ennard is only present on Night 5, and will attack the player if the player does not type in Circus Baby's password fast enough or does not follow the instructions given in Funtime Auditorium (with the exception of when the player makes a run for the Private Room.) After the player enters Parts/Services on Night 5, Ennard talks to the player for the first time, using Baby's voice and tricking the player into believing that Baby is the one talking. Ennard then guides the player to the Scooping Room, from where the player can see Ennard through the window of the room and realizes Baby was not the one talking. From there, Ennard explains to the player that he does not want to hurt them, but needs their body to complete it's plan and escape from the facility. It activates the scooper, which disembowels the protagonist. A cutscene plays afterward displaying the silhouette of Ennard, within the player's body in front of a bathroom's mirror in Michael Afton's Home, who opens their eyes to show Ennard's purple irises, thus revealing it succeeded with its plan. They then have control of Michael Afton's body until the 5th cutscene in the custom night in which Michael regurgitates Ennard into the sewer.",
             "id": 4
         },
         {
             "characterName": "Bidybab",
-            "description": "jsdan",
-            "behaviour": "canon jumpscare",
+            "description": "Bidybab is an animatronic that appears in Five Nights at Freddy's: Sister Location. They’re a group of small baby-like animatronics, who act as Circus Baby's minions.",
+            "behaviour": "They will only make an appearance on Night 2 when the player hides underneath the desk in the Circus Gallery. They will attempt to open the desk door twice and peer through the holes in it. If the player keeps the door closed they will whisper to each other for a little bit and leave. They can also appear outside the Elevator as an Easter Egg.",
             "id": 5
         },
         {
             "characterName": "Minireena",
-            "description": "jsdan",
-            "behaviour": "canon jumpscare",
+            "description": "The Minireenas are small, feminine mannequin-style animatronics. They are very small with bald, white, mask-like faces, pitch black eyes (with amber eyes in their jumpscare) and a smiling mouth with no teeth. Inside their masks, a spherical head is visible attached to their necks.",
+            "behaviour": "During Night 4 when the player is trapped in a springlock suit, the Minireenas will attempt to crawl into your suit and jumpscare you while you try to keep the springlocks wound.",
             "id": 6
         }
         ]
@@ -273,26 +279,26 @@
         "characters": [
         {
             "characterName": "Scrap Baby",
-            "description": "Pinky cheeks",
-            "behaviour": "Corridor",
+            "description": "Sometime between the events of Five Nights at Freddy's: Sister Location and Freddy Fazbear's Pizzeria Simulator, Circus Baby was forcibly ejected from the entity known as Ennard, the character that used Michael Afton's body to escape the facility. After being removed, Baby's soul, Elizabeth returns to the facility and found a way to rebuild her body using her scooped body and scrap parts she found on the streets then eventually wound up in the alley behind The Pizzeria trying to get inside of your establishment. During the Completion ending of the game, it is revealed that the girl who was killed by Circus Baby and possessed her was named Elizabeth, a character already established as William Afton daughter. This scene was also shown in Sister Location's 8-bit minigame, in which Baby must deliver cupcakes to satisfy children. Scrap Baby speaks to the player, gloating over her access to more of the children's souls, and telling her father she can continue his work before she is interrupted by Henry. He reveals that the Freddy Fazbear's Pizza Place was built as a trap to lure her and the remaining haunted animatronics into the building. The animatronics had trapped the souls that possessed them; which had to be passed on into the afterlife. Elizabeth's soul is laid to rest with the rest of the victims inside of the animatronics as the Pizzeria burns during the ending.",
+            "behaviour": "Unlike previous games in the franchise, the animatronics of this game share the same behavior. All four are attracted to sound. During the management portion of the day, the player must do tasks such as ordering supplies, printing flyers, and doing maintenance. Each of these as well as the computer itself and the fan above all make noise that draw in the animatronics. However, they can be thrown off the scent using an audio system to lure them around the vents and the player can also reduce their presence by shutting down the computer and the fan. Should an animatronic be ready to attack in the vent, the player can shine their flashlight into the vent to force them away.",
             "id": 0
         },
         {
-            "characterName": "Scraptrap",
-            "description": "lara lara lara toy bonnie",
-            "behaviour": "right vent",
+            "characterName": "William Afton - 'Scraptrap",
+            "description": "Afton is the main antagonist and a salvageable animatronic in the game. He is the serial killer responsible for the events of the series, his rotten and mangled corpse now trapped within a broken Spring Bonnie costume. He has been given the nickname 'Scraptrap' by many fans to distinguish this iteration from other incarnations of the character.",
+            "behaviour": "Unlike previous games in the franchise, the animatronics of this game share the same behavior. All four are attracted to sound. During the management portion of the day, the player must do tasks such as ordering supplies, printing flyers, and doing maintenance. Each of these as well as the computer itself and the fan above all make noise that draw in the animatronics. However, they can be thrown off the scent using an audio system to lure them around the vents and the player can also reduce their presence by shutting down the computer and the fan. Should an animatronic be ready to attack in the vent, the player can shine their flashlight into the vent to force them away.",
             "id": 1
         },
         {
             "characterName": "Molten Freddy",
-            "description": "Chica toy bunny",
-            "behaviour": "left vent",
+            "description": "Molten Freddy (known formerly as Ennard) is a molten and dismantled version of Funtime Freddy. He is the combined form of Ballora, Funtime Freddy, and Funtime Foxy, with a mask bearing resemblance to Funtime Freddy.",
+            "behaviour": "Unlike previous games in the franchise, the animatronics of this game share the same behavior. All four are attracted to sound. During the management portion of the day, the player must do tasks such as ordering supplies, printing flyers, and doing maintenance. Each of these as well as the computer itself and the fan above all make noise that draw in the animatronics. However, they can be thrown off the scent using an audio system to lure them around the vents and the player can also reduce their presence by shutting down the computer and the fan. Should an animatronic be ready to attack in the vent, the player can shine their flashlight into the vent to force them away.",
             "id": 2
         },
         {
             "characterName": "Lefty",
-            "description": "fox fox dead",
-            "behaviour": "was that the bite of 87!?!",
+            "description": "Lure Encapsulate Fuse Transport Extract (also known as Lefty) is a salvageable, and buyable animatronic in the game. He causes the most damage, and the player cannot get rid of him. It has also been confirmed this is now the body that The Marionette possesses. He is a member of Rockstars Assemble, a band including 'Rockstar' versions of Bonnie, Chica, Foxy, and Freddy.",
+            "behaviour": "Unlike previous games in the franchise, the animatronics of this game share the same behavior. All four are attracted to sound. During the management portion of the day, the player must do tasks such as ordering supplies, printing flyers, and doing maintenance. Each of these as well as the computer itself and the fan above all make noise that draw in the animatronics. However, they can be thrown off the scent using an audio system to lure them around the vents and the player can also reduce their presence by shutting down the computer and the fan. Should an animatronic be ready to attack in the vent, the player can shine their flashlight into the vent to force them away.",
             "id": 3
         }
         ]
@@ -304,80 +310,80 @@
         "characters": [
         {
             "characterName": "Happy Frog",
-            "description": "Pinky cheeks",
-            "behaviour": "Corridor",
+            "description": "Happy Frog is bipedal lime frog with tanned accents on her eye-sockets, lower-jaw, fingertips, stomach, and foot-pads. Her scleras are grayish-white with magenta irises, escorted by black pupils. A circular yellow ball attached to a metallic rod can be seen connected to her forehead. She has long eyelashes, but weirdly, it doesn't connect on her eyelid. Her stomach is scaled, revealing massive bumps. Similar to Nedd Bear and Foxy, she has a dark green pelvis, representing pants. Her microphone is metallic gray with a black colored speaker. She has bucked teeth with massive gaps, similar to the Mediocre Melodies.",
+            "behaviour": "She climbs around in the overhead duct system making her way toward the hoses that drop into your office. Use the audio lure to hold her in place. She is fooled 100% of the time by the audio lure, but is immune to the effects of the heater. Happy Frog climbs through the duct system, making her way toward the Office. She appears as a green warning triangle on the duct system display. Every second, she has a chance to move one 'step' closer to the Office, determined by the game rolling a number between 0 and 29 and comparing it to her AI level; if it is less than her AI level, she will move. She is fooled 100% of the time by the audio-lure, but is immune to being pushed back by the heater. When she sits at a closed duct for a total of 30 seconds, she has a 1/3 chance to the return the middle of the duct system. If she reaches an open duct, she will not move from there until that duct is closed. When poised to strike, she has a 50% chance every half-second that the cameras are up to attack.",
             "id": 0
         },
         {
             "characterName": "Mr Hippo",
-            "description": "lara lara lara toy bonnie",
-            "behaviour": "right vent",
+            "description": "Mr. Hippo is bipedal lavender with lighter accents on his muzzle and stomach. His eyelids are metallic black, as his scleras are grayish-white, with navy-blue irises added with black pupils. He holds four sporting teeth alongside his lower jaw. As seen, there can be a metallic pole in the center of his mouth, used for holding his head and stomach in place. His nose-holes indicate a hippopotamus animatronic, portraying he's a hippo. His flower is located on his neck, with pink petals and a yellow stigma. Located on his stomach, two black buttons can be seen. Similar to Freddy Fazbear, he has a black colored top-hat on his forehead.",
+            "behaviour": "Mr. Hippo climbs through the duct system, making his way toward the Office. He appears as a purple warning triangle on the duct system display. Every 0.95 seconds, he has a chance to move one 'step' closer to the Office, determined by the game rolling a number between 0 and 29 and comparing it to his AI level; if it is less than his AI level, he will move. He is fooled 100% of the time by the audio-lure, and can be pushed back by the heater, with a 1/50 (2%) chance every 100 milliseconds that the heater is active. When he sits at a closed duct for a total of 30 seconds, he has a 1/3 chance to the return the middle of the duct system. If he reaches an open duct, he will not move from there until that duct is closed or until he is pushed back by the heater. When poised to strike, he has a 50% chance every half-second that the cameras are up to attack.",
             "id": 1
         },
         {
             "characterName": "Orville Elephant",
-            "description": "Chica toy bunny",
-            "behaviour": "left vent",
+            "description": "Orville Elephant is bipedal orange with lighter accents on his trunk, stomach, ears, eyes, and toes. His scleras are whitish-red, with dark-blue irises and black pupils. He holds four sporting teeth along his lower jaw. As seen, there can be a metallic endoskeleton seen in the center of his mouth. His trunk represents a Loxodonta, portraying an Elephant. Similar to Mr. Hippo, his flower is purple pedaled with a pink stigma. Located on his stomach, two black buttons can be seen. He has a purple colored top-hat with a white stripe. In his hands, a silver wand with blackened coloring, and white paint located at the tip.",
+            "behaviour": "Orville Elephant climbs through the duct system, making his way toward the Office. He appears as an orange warning triangle on the duct system display. Every 0.9 seconds, he has a chance to move one 'step' closer to the Office, determined by the game rolling a number between 0 and 29 and comparing it to his AI level; if it is less than his AI level, he will move. He is fooled 10% of the time by the audio-lure, and can be pushed back by the heater, with a 1/50 (2%) chance every frame that the heater is active. When he sits at a closed duct for a total of 30 seconds, he has a 1/3 chance to the return the middle of the duct system. If he reaches an open duct, he will not move from there until that duct is closed or until he is pushed back by the heater. When poised to strike, he has a 50% chance every half-second that the cameras are up to attack.",
             "id": 2
         },
         {
             "characterName": "Nedd Bear",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Nedd Bear is bipedal light brown with tanned accents on his ears, eyebrows, eye-sockets, muzzle, jaw, stomach, footpads, and paws. His sclera is grayish-white with lime-green irises accompanied by black-pupils. As seen, his eyeballs are lumped, as they are uneven. He wears a crimson hat, bind up to a metallic gray spring. He has teeth supportive on his muzzle and lower jaw, the muzzles teeth is gapped however. His ties crimson-red escorted by whitened stripes. Noticeably, you can notice a gray metallic endoskeleton in his mouth.",
+            "behaviour": "Nedd Bear climbs through the duct system, making his way toward the Office. He appears as a brown warning triangle on the duct system display. Every 0.85 seconds, he has a chance to move one 'step' closer to the Office, determined by the game rolling a number between 0 and 29 and comparing it to his AI level; if it is less than his AI level, he will move. He is fooled 50% of the time by the audio-lure, and can be pushed back by the heater, with a 1/50 (2%) chance every frame that the heater is active. When he sits at a closed duct for a total of 30 seconds, he has a 1/3 chance to the return the middle of the duct system. If he reaches an open duct, he will not move from there until that duct is closed or until he is pushed back by the heater. When poised to strike, he has a 50% chance every half-second that the cameras are up to attack.",
             "id": 3
         },
         {
-            "characterName": "Pig Patch",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "characterName": "Pigpatch",
+            "description": "Pigpatch is a bipedal pink animatronic pig with lighter accents on his muzzle, stomach, ears, and bottom feet. His cheeks are crimson-red. His muzzle contains two huge nose-holes, completely gray, as his muzzle contains a fade of the color of his fur-color. His irises are multi-colored, as his irises on his right are lime-green, the others are navy-blue, both containing white scleras and black-pupils. His lower jaw supports two teeth, both heavily gapped. Under his stomach, a circular bellybutton with pink accents are seen. Similar to Foxy, He has a brown pelvis, representing brown pants. His tail is curly with pink accents. He has a banjo, with tan and brown coloring.",
+            "behaviour": "Pigpatch climbs through the duct system, making his way toward the Office. He appears as a scarlet warning triangle on the duct system display. Every 0.9 seconds, he has a chance to move one 'step' closer to the Office, determined by the game rolling a number between 0 and 29 and comparing it to his AI level; if it is less than his AI level, he will move. He is fooled 100% of the time by the audio-lure, and can be pushed back by the heater, with a 1/50 (2%) chance every 100 milliseconds that the heater is active. When he sits at a closed duct for a total of 30 seconds, he has a 1/3 chance to return to the middle of the duct system. If he reaches an open duct, he will not move from there until that duct is closed or until he is pushed back by the heater. When poised to strike, he has a 50% chance every half-second that the cameras are up to attack.",
             "id": 4
         },
         {
             "characterName": "Rockstar Freddy",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Rockstar Freddy is bipedal brown with tanned accents on his muzzle, ears, stomach, and toes. His scleras are grayish-white with navy-blue irises including black pupils. His eyelids, cheeks, and kneepads are crimson. Rockstar Freddy's top-hat is blackish-purple, similar to his bowtie. His forehead and lower jaw are connected to a metallic pole, similar to the other 'rockstars' He has buck teeth supportive on his muzzle and lower jaw. He has a metallic golden star on his stomach. His microphone has a purple metallic pole with a gray speaker.",
+            "behaviour": "Rockstar Freddy stands in the right side of the Office, facing down and being visually offline. Every 30 seconds, the game will choose a number between 0 and 29. If this number is less than his AI level, he will activate when the Monitor is next lowered, and ask for 5 Faz-Coins. He will ask politely 5 times every 3 seconds, then impatiently three more times, and then simply 'please deposit' another 3 times before his patience runs out and he attacks, for a total of 33 seconds to collect the requisite amount of coins and pay him before he attacks. There is a 1/3 chance that his voice will glitch out every 250 milliseconds, which is raised to 2/3 while the heater is on. In lieu of paying FazCoins, the Heater can be used to cause him to malfunction. After 50 frames of it running, every second afterwards has a 50% chance of causing Rockstar Freddy to believe that the player has paid and cause him to turn off.",
             "id": 5
         },
         {
             "characterName": "Rockstar Bonnie",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Rockstar Bonnie is bipedal navy-blue with lighter accents on his ears, muzzle, stomach, and toes. His eyelids are darkened purple, as his scleras are grayish-white with lime-green irises added with black pupils. He has two teeth supporting on his muzzle, his lower jaw has several. As seen, in his mouth you can see a metallic pole, this helps keep his forehead and jaw connected. His cheeks are pinkish-purple, following with his kneepads. Similar to his original counterpart, he has a red bowtie. Discarding the similarities, Rockstar Bonnie seems to have two metallic golden stars, unlike the other rockstars. His guitar represents a electrical guitar, with red/orange coloring connected to his back by a gray guitar strap.",
+            "behaviour": "On every 13-second interval (e.g. 0:13.0, 1:44.0, 2:39.0) while the Monitor is raised, the game will choose a number between 0 and 29. If this number is less than his AI level, he will appear in the Office, and will require the player to find his guitar. His guitar will randomly spawn on either CAM 01, CAM 02, CAM 06, or CAM 08, each time appearing on the left side of the room. Double-clicking it will cause it and Rockstar Bonnie to disappear. Once Rockstar Bonnie loiters in the Office for 900 frames (about 15 seconds), the lights will begin to go out. Once he is in the Office for 1000 frames, he will attack. Rockstar Bonnie can be removed from the current night with the Death Coin.",
             "id": 6
         },
         {
             "characterName": "Rockstar Chica",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Rockstar Chica is bipedal yellow with mauve accents on her eyelid, kneecap, and cheeks. Her sclera are grayish-white with pink-magenta pupils, appended with black pupils. She has a orange beak, enumerated with red lipstick. Her teeth are aperture, predominantly gapping. She has four stripes of hair on her forehead, representing hair, similar to her counterpart's characteristics. Her bib is white colored with wording of 'LET'S ROCK!!!'' with yellow coloring, outlined with mauve, with confetti triangles, all of them multi-colored.",
+            "behaviour": "Every 10 seconds that the Monitor is flipped down, and Rockstar Chica is not currently at one of the halls, the game will choose a number between 0 and 29. If this number is less than her AI level, she will appear in either CAM 01 or CAM 02, with a 50/50 chance to appear in either one. Rockstar Chica will avoid entering the Office on any side that has the wet-floor sign in front of it. The wet-floor sign starts on the left side of the Office by default, and can be changed to the opposite side by double-clicking it. If the wet-floor sign is placed on the side that she is trying to enter from, she will despawn. After 900 frames (about 10.5 seconds) of standing at one of the halls, if the Monitor is raised and the door to that side is not closed, Rockstar Chica will enter the Office and attack. While Rockstar Chica will not be sent away by the doors, her attack will be prevented so long as the door to the side that she is on remains closed for the entire duration that the player has the Monitor up. Rockstar Chica can be cam-stalled; so long as the camera is set to the room she is currently in, she cannot enter the Office, and furthermore will be stuck on that side forever as she cannot 'change' halls until scared off with the wet-floor sign. By leaving the wet-floor sign on one side of the Office, and setting the camera to the hallway entrance of the other, Rockstar Chica can be nullified as a threat entirely so long as both holds true. When employing this strategy, it is worth considering leaving the wet-floor sign on the left side of the Office, and the camera on CAM 02, as this will also allow the player to cam-stall the plush animatronics (Nightmare Bonnie, Nightmare Mangle, and Circus Baby) at the same time.",
             "id": 7
         },
         {
             "characterName": "Rockstar Foxy",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Rockstar Foxy is a bipedal red fox, with lighter accents on his muzzle, stomach, and ears. He has yellow irises with black pupils, on his left eye, he has a eyepatch. His muzzle contains four darken freckles. Similar to Foxy, his teeth are clear gold and white. He has darken red eyebrows, and four strings of hair on his forehead. Similar to the rockstars, he has a golden star on his chest. His parrot is a green bipedal bird with lighter accents on it’s torso. It has blue irises with black pupils and a eyepatch similar to Rockstar Foxy. Rockstar Foxy has a shiny gray hook. In addition, he has a wooden peg on his right foot.",
+            "behaviour": "Every minute, the game will roll a check to see if Rockstar Foxy's parrot will spawn. The formula for this is by rolling a random number between 0 and 39, then comparing it to Rockstar Foxy's AI level plus ten. If this random number rolled is greater than Rockstar Foxy's AI level, his parrot will spawn in the Office, flying from left to right. The player can left-click it to summon Rockstar Foxy. From there, the game will decide on Rockstar Foxy's 'helpfulness', rolling a random number between 1 and 62, and then adding Rockstar Foxy's AI level times two. If the outcome of this formula is 60 or less, he will provide a choice of a few boons to the player: he can add 1% power, cool down the Office to 60 degrees, soundproof the room for a short time, or instantly give 10 Faz-Coins. Once Rockstar Foxy is summoned, he will not despawn until an option is chosen. However, if the outcome of his 'helpfulness' is over 60, he will instead attack and end the night.",
             "id": 8
         },
         {
             "characterName": "El Chip",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "El Chip is a bipedal brown animatronic beaver with lighter accents on his muzzle, ears, eyebrows, stomach, toes, tail, and kneepads. He has white scleras, and lime-green irises with black pupils. His eyelids and cheeks are crimson. He has teeth supporting his muzzle and lower jaw, representing a beaver. His tail is scaled and droopy, as it carries on the flooring. He wears a brown sombrero, with yellow and red coloring.",
+            "behaviour": "Every 10 seconds, if Phone Guy is not presently calling, the game will choose a number between 0 and 29. If this number is less than his AI level, El Chip's ads will pop up, taking up the entire screen and blocking visibility of the Office and any HUD elements, as well as playing loud music that may mask otherwise important audio cues. The player will need to either click the 'SKIP' button given by the ad or press [ENTER] on their keyboard to make the ad go away. If the player neglects to do either, El Chip's ad will disappear on its own after 300 frames (about 5 seconds). It is recommended to use the [ENTER] key to dismiss him, not only since it's generally faster, but it mitigates the risk of accidentally hovering over Nightmarionne while dismissing the ad, as he will not be visible while it's on the screen but will fade in all the same.",
             "id": 9
         },
         {
             "characterName": "Music Man",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Music Man is bipedal white with pink accents on his eyelids, lips, nose, and stomach including purple accents around several areas. He represents a humanoid entity with spider-like legs blotched with purple coloring. His scleras are completely black with white pupils. Similar to Freddy, he has a black top hat, guided with a white stripe. His stomach contains a speaker, with two separated speakers, similar to the Funtimes. His cymbal has yellow coloring with metallic gray handles. This was confirmed as one of the most weirdest animatronics. He seems to serve as a mascot, though, unlike his weird appearance.",
+            "behaviour": "Music Man sits in the Office behind the player and out of view. He is very sensitive to noise, and levels of it will make him steadily more agitated. He starts the night at 0 'irritation', and gains 1+(AILevel/5) irritation every 20 milliseconds that the noise level is at two bars (e.g. having the Power Generator on). If the noise level is at or above three bars (flashing red, e.g. having both the Power Generator and Fan on), he will instead gain 1+(AILevel/5)  irritation every frame. If Helpy successfully performs his airhorn jumpscare, he will immediately add 2500 to Music Man's irritation. He will lose 1 irritation every frame that the noise level is at 1 (e.g. having just the Fan on), and 5 irritation every frame that the noise level is at 0. Contrary to popular belief, he does not have any special interaction with the global music box. The rate of his cymbal crashes depends on his current irritation: if it's above 5000 and less than 6500, he will crash them every 3 seconds; it it's above 6500 and less than 8000, he will crash them every 2 seconds; and once above 8000, he will crash them every second. Once his irritation reaches over 10,000, he will attack.",
             "id": 10
         },
         {
             "characterName": "Funtime Chica",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "description": "Funtime Chica is a bipedal grayish-white with pink accents. She has white scleras with pinkish-purple irises with black pupils. Her maw is orange as it lacks teeth however, her lower jaw supports several teeth. Her lip-color is pink, similar to Mangle. Four stripes of hair are placed her forehead, representing hair. Her bib is plain, as it shows no signs of design. Similar to the Funtimes, Funtime Chica's faceplate separates into four sections across her face, this may be where her name's origin took place, but weirdly, Funtime Chica does not appear in Sister Location and appears as a mascot in Freddy Fazbear's Pizza Simulator. She has a metallic gray speaker, like Funtime Foxy and Funtime Freddy, surrounded by pink coloring. A plate located on her bib is removed, revealing gray metallic wiring. Discarding her similarities to Toy Chica, her pelvis is orange, resembling panties. Her cupcake seems to be a replica of the Five Nights At Freddy's 4, portraying as a friendlier version, the only similarity is the teeth, as both have the same teeth characteristics.",
+            "behaviour": "Every 35 seconds, the game will choose a number between 0 and 29. If this number is less than her AI level, Funtime Chica will appear to distract the player, causing flashes and temporarily distorting the screen for anywhere from 200 to 499 frames (from about 3.3 seconds to 8.3 seconds). If visual effects are disabled, the distortion effect will not appear, significantly reducing the disruption caused by Funtime Chica's appearances down to a few flashes, her random line of dialogue, and her sprite's brief appearance at the center of the screen.",
             "id": 11
         },
         {
-            "characterName": "Nightmarrionette",
-            "description": "fox fox dead",
-            "behaviour": "was that bear",
+            "characterName": "Nightmarionne",
+            "description": "Nightmarionne is a Human-Like animatronic, He has a white mask with black tears, black lipstick, white dots for eyes, and has a row of teeth on the top and six teeth on the bottom. His body is black and is designed to look like a skeleton. He has a large chest with Ribs protruding from the sides and a slender body, skeletal legs, and arms with claws protruding at the end with white stripes at the end of his fingers.",
+            "behaviour": "Nightmarionne has six distinctive locations that he can be in the Office, four are across the rough middle of the screen, and two are in the upper-left corner. Which location he's active is randomly chosen at the beginning of the night, and changes every second that he is fully invisible. He starts off with an 'invisibility' value of 255, and his invisibility will decrease by (AILevel/5)+1 every frame that the mouse cursor sits on top of where he is currently active, taking from 213 frames (about 3.55 seconds) to 51 frames (about 0.85 seconds) to reduce this to 0 from AI levels 1 to 20 respectively. Once his invisibility reaches 0, he will be fully materialized and will attack. His invisibility will increase by 1 every frame that the cursor is not overlapping with his model until he reaches 255 invisibility again.",
             "id": 12
         }
         ]
@@ -389,8 +395,8 @@
         "characters": [
         {
             "characterName": "Glitchtrap",
-            "description": "Pinky cheeks",
-            "behaviour": "Coridor",
+            "description": "Glitchtrap, also known as The Anomaly, or Malhare by fans, is the main antagonist of the Cooperative Series of the Five Nights at Freddy's franchise. He is the main antagonist of Five Nights at Freddy's: Help Wanted and its sequel and the overarching antagonist of Five Nights at Freddy's: Security Breach. Glitchtrap takes on the form of a person wearing a Spring Bonnie costume - who is a grinning, bipedal, golden-yellow rabbit. He wears a purple star-speckled vest, a purple bow tie, and two black buttons near the top of their chest. He also has stitches stretching across his waving hand. he initially appears translucent, progressing into a less-spectral form over time. He also possesses vivid purple eyes with small pupils, which are the first thing visible when he starts to appear to the player's right. In Blacklight Mode, his eyes will turn blue with white, circular pupils. He also has large whiskers on each side of his face, three eyelashes on both of their eyes, and large arching eyebrows. If you look closer you can see wetness coming from his eyes and mouth, resembling tears and drool, that's also a feature he has in the Princess Quest arcade machine in Security Breach.",
+            "behaviour": "While Glitchtrap's personality is unknown and quite mysterious, they are almost completely silent, with their only voice line being 'I always come back. Let me out.' from the Princess Quest minigame. They seem to possess high intelligence, such as being able to manipulate and brainwash people — like they did with a woman named Vanny — in order to get what they want. As seen in the conversation they had with Vanny, Glitchtrap desires to strike fear in the hearts of their victims and even their allies as they spoke to her in a rather threatening manner. Glitchtrap seems to like to taunt the player by waving at them and staring in an attempt to make them feel uneasy and fearful, similar to what Springtrap did in Five Nights at Freddy's 3. Although he lurks behind the player for a majority of the game, very little about Glitchtrap is truly known. At this time, there is little explanation for Glitchtrap's appearance other than the small pieces of information scattered throughout Help Wanted. According to the various tapes that can be found within the game, Glitchtrap began to materialize after the game's beta testing began in full. Although it is not confirmed to be the case, it is highly implied that Glitchtrap may have come into the game through the scanning of old circuit boards. One of which may have belonged to the old Spring Bonnie suit that William Afton was trapped inside of for decades and later burned to death in. That same circuit board may have contained William's ghost, which burrowed into the video game code to become a complex and malicious sentient code and allowed William to be reborn again. Glitchtrap was known created a strange and supernatural entity that deeply disturbed the beta testers who encountered it. Glitchtrap first appears in the doorway out of the player's reach, watching from there. As the player progresses by collecting more tapes found in the main games, he gets closer and closer, eventually looming directly behind the player. The 'Pizza Party' Minigame on Night Terror's Hard/Nightmare Mode appears to be Glitchtrap’s reenactment of one his previous murders as William Afton . Upon entering the backstage, Glitchtrap will come out from the curtain, giving the player a signal to follow him. Upon following him, the player will appear on the stage holding a microphone - inferred to have been stuffed into Freddy Fazbear. In the background, Glitchtrap is seen dancing near the prize corner.",
             "id": 0
         }
         ]
@@ -402,45 +408,57 @@
         "characters": [
         {
             "characterName": "Glamrock Freddy",
-            "description": "well done Gregory!",
-            "behaviour": "Ahh my eyes",
+            "description": "Glamrock Freddy, also known simply as Freddy Fazbear, is Freddy Fazbear's glamrock counterpart who appears in Five Nights at Freddy's: Security Breach as the deuteragonist and ally to Gregory. He is the leader and mascot of Freddy Fazbear's Mega Pizzaplex who is the only animatronic to not be corrupted by Vanny's power after shutting down in the middle of a performance. Unlike his counterparts, Glamrock Freddy actively assists and protects Gregory.",
+            "behaviour": "Glamrock Freddy is initially introduced as a bookish, straightforward entertainer. Throughout the entirety for the base game of Security Breach, Glamrock Freddy is overall a friendly, honest, and agreeable character, even in the face of adversity (as shown when dealing with Vanessa). He is shown to be very protective of Gregory and very focused on keeping him safe, going as far as allowing him to hide in his stomach (albeit he is at first uncomfortable to do so as his compartment is not suited to hide humans) to prevent the other animatronics from finding him. He is generally nice and polite as well, as he apologizes quite often, even when he hasn't done anything wrong. He's a little oblivious, as shown during the first encounter with Vanny (although he couldn't see her without Roxanne Wolf's eyes), and when he's upgraded with the other Glamrocks' parts, as seen when he gets upgraded with Montgomery Gator's claws. He is friendly and amicable towards the other animatronics, encouraging Gregory to say hello to the DJ, expressing that he misses Bonnie when in the bowling alley, and showing concern for the co-performers that he gets the upgraded parts from. This, however, does not deter him from helping Gregory. He quickly establishes a bond with Gregory, affectionately calling him 'superstar', and his protective nature is highlighted by his strong paternal instincts. This goes as far as to the two forming a father and son-like relationship. However, should Gregory make a mistake while upgrading him or run out of power while inside of him, Glamrock Freddy will become hostile, implying that he still suffers from glitches (more likely, however, to serve as a game balance mechanic). However, it is stated when maintenance begins, animatronic safety measures are disabled, so that may be the cause of his attacks during this phase. He seems extremely sentient and aware of his reality, as he begs Vanessa not to leave him with his head disconnected in Parts and Service. He even seems to abide by a moral code, perhaps programmed intentionally to serve as a good role model for young children, as he reprimands Gregory if he tries to enter Fazer Blast while inside of him to cheat. In spite of him being a robot, he's very sentient and not devoid of emotion, such as when he got agitated after he found out that Gregory snuck in his stomach hatch without him knowing, and while he has only positive things to say about the other robots, he is uneasy when talking about the Daycare Attendant.",
             "id": 0
         },
         {
             "characterName": "Glamrock Chica",
-            "description": "lara lara lara toy bonnie",
-            "behaviour": "right vent",
+            "description": "Glamrock Chica is Chica's glamrock counterpart who appears in Five Nights at Freddy's: Security Breach and its DLC expansion Ruin as one of the secondary antagonists. She is the guitarist of the glamrock band who gets shattered by Gregory and her voice box removed for Glamrock Freddy.",
+            "behaviour": "Glamrock Chica is shown to be deceptive, giving Gregory false promises of seeing his parents, offering candy or trying to comfort him to seem friendly, all-in attempts to make him give out his location. These lines however seem to be pre-recorded for the purposes of ensuring child safety during the Pizzaplex’s opening hours. Being the face of Mazercise, she also seems fond of exercising. She scams patrons by encouraging them to be fit, while ironically giving them discounts to buy junk food further showing her deceptive nature. According to Glamrock Freddy, Glamrock Chica has an obsession with food, most specifically pizza, a trait shared across many Chica animatronics. Due to this obsession, she also has a bad habit of eating out of various garbage cans in the Pizzaplex. Glamrock Chica's obsession with food is shown to be strong enough to the point that, whenever food is nearby, it is enough to attract her attention and distract her, even aggressively shoving others aside if they have food. When Glamrock Chica is not in an aggressive state, she appears to be caring of her bandmates - at the very least Glamrock Freddy, as she immediately rushes to his side after he collapses in the opening cutscene. Additionally, she keeps a bowling ball from Bonnie Bowl in her green room possibly as a memento of the deceased Glamrock Bonnie, showing that like Glamrock Freddy she is remorseful of his death and genuinely misses him. In Ruin, Chica's gluttonous behavior still remains as evident by the rubbish bag present in the remains of her stomach area and the moldy cheese covering her mouth. However, Chica does not show much personality aside from roaming around the remains of the Pizzaplex aimlessly often at times deactivating although she does turn her head around before she starts feeding suggesting that she is traumatized from that moment Gregory attempted to destroy her. The fact she deactivates regularly may suggest she is close to death/breakdown, as unlike Monty, who is a feral animalistic creature, and Roxy, who is completely functional, Chica is far less sentient, seemingly barely functional with limited autonomy. Like Monty, she does not speak at all due to lacking a voice box; although she does briefly vocalize, when Cassie inserts a new voice box back into her after completing Chica's Feeding Frenzy, only to deactivate shortly after.",
             "id": 1
         },
         {
             "characterName": "Roxanne Wolf",
-            "description": "Chica toy bunny",
-            "behaviour": "left vent",
+            "description": "Roxanne Wolf, also known as Roxy, is a glamrock animatronic who appears in Five Nights at Freddy's: Security Breach as one of the secondary antagonists and the Ruin DLC as a minor supporting character. She is the self-centered keytar player of the glamrock band who gets run over by Driver Assist Bot and her eyes removed for Glamrock Freddy. She also has connection to the protagonist of Ruin, Cassie, who she saves near the end of the game.",
+            "behaviour": "In Security Breach, Roxanne Wolf is self-centered, shown by her repeatedly complimenting herself in the mirror and furiously asking Gregory if he thinks himself better than her. Furthermore Roxanne is shown to be cruel and sadistic; being both emotionally, and physically abusive. This is seen where she notably taunts and insults Gregory by saying he has no friends and that no one will miss him, while calling him a little coward for not standing up to her when she hunts him. However, she expresses low self-esteem issues, as at one point she can be seen calling herself a failure while looking in the mirror. Roxy speaks to herself often, showing great care about her appearance. Her pride causes her to hide her vulnerabilities, as when Glamrock Freddy enters her room while she is crying, she angrily tells him to get out of her room. When she is damaged following Gregory's drive at Roxy Raceway, she begins to patrol while in despair; sobbing and lamenting her mangled state. By Ruin, Roxanne's low self-esteem remains, being much more evident than before. Roxy is shown to be vindictive and bears a grudge against Gregory for taking her eyes. However, when she is in safe mode near the end of Ruin, she's generally kind and caring, especially towards the protagonist of Ruin, Cassie, as she becomes docile and remorseful upon being freed of her corruption after hearing Cassie's voices. Later on, She greets her with a warm welcome when Cassie is tasked with deactivating her, as she reminisces of how she remembered the details and date of her birthday along with her favorite type of cake, while hesitating when Cassie was about to install the Faz-Wrench into one of her eye sockets. Furthermore, Roxy becomes fiercely protective, going as far as to follow and save Cassie from The Mimic. Roxy is Cassie's favorite character, solidified by the Roxy-Talky's in-game description. This may be likely due to Roxy's significance to Cassie, making an appearance to her birthday party when nobody else did as well as making it special for her, asking if she booked her party and assuring her that she was certain her friends would attend this time.",
             "id": 2
         },
         {
             "characterName": "Montgomery Gator",
-            "description": "fox fox dead",
-            "behaviour": "was that the bite of 87!?!",
+            "description": "Montgomery Gator, also known as Monty, is a glamrock animatronic who appears in Five Nights at Freddy's: Security Breach and Ruin as one of the secondary antagonists. He is the aggressive bassist of the glamrock band, having replaced Glamrock Bonnie, before getting dropped from the catwalks above his attraction by Gregory and his claws removed for Glamrock Freddy.",
+            "behaviour": "Monty has a typical personality relating to the stereotype of a rockstar, being seen from trashing his room, to his 'rocking' personality. He also seems to like to smash and destroy things, as seen in his boss fight. He seems to enjoy breaking doors more than anything, as some of the doors in the Pizzaplex have signs with a Monty symbol crossed out to discourage him from entering, with little effect. He may also have some form of dislike towards Glamrock Freddy, as shown in the final level of his golf minigame that Freddy is left in a dumpster, with Monty presumably taking his role as the lead animatronic entertainer, showing that he may be jealous of Freddy's leadership and wishes to overthrow him as the lead singer. It is also worth considering that the management of the Pizzaplex may be considering replacing Freddy with Monty, rather than Monty himself wanting to overthrow Freddy. Alternatively, it is possible that the mini-game may not have any significant lore implications. Instead, it could just be a reference to how Freddy is the only good Glamrock in Security Breach, and as a result the other Glamrocks are throwing away Freddy for 'betraying' them. In Ruin, Montgomery Gator has completely changed after the events of Security Breach, now becoming more animalistic and feral. He also does not speak at all throughout the entire DLC, with him only grunting and roaring whenever he spots Cassie.",
             "id": 3
         },
         {
             "characterName": "Vanny",
-            "description": "yet another murder bunny",
-            "behaviour": "dancie dance",
+            "description": "Vanny is a follower of the digital virus Glitchtrap, a digital virus similar to that of William Afton, and is the secondary antagonist of the Cooperative Series of the Five Nights at Freddy's franchise, appearing as a minor antagonist in Five Nights at Freddy's: Security Breach. It's revealed in the Princess Quest minigames that she was the main protagonist in Five Nights at Freddy's: Help Wanted, where she was first corrupted by Glitchtrap. She also plays a role in Five Nights at Freddy's AR: Special Delivery.",
+            "behaviour": "In Five Nights at Freddy's: Help Wanted, Vanny has some uncertainty in her voice when being confronted about her task implying she at first wasn't fully ready to kill victims. However by the time of Security Breach, she had apparently killed at least nine children at the PizzaPlex, as seen in a newspaper article in the Bad Ending for Security Breach. In Five Nights at Freddy's: Security Breach, Vanny is shown to have a sadistic personality hidden behind a childlike flamboyance. This is shown through her casually and gleefully skipping after Gregory as he runs from her before running with arms outstretched if Gregory is too close. She also happily orders the S.T.A.F.F. Bots to disassemble Glamrock Freddy and constantly laughs as she is about to murder Gregory. Despite this, she is capable of showing fear, especially when her plans backfire. This is evident if Gregory makes the Staff Bots kill her the same way she did to Glamrock Freddy earlier.",
             "id": 4
         },
         {
             "characterName": "DJ Music Man",
-            "description": "Muuuuuuuuuuuuuuuuuusic maaaan",
-            "behaviour": "silly goose",
+            "description": "DJ Music Man, referred to as DJMM in-game, is a giant animatronic that first appeared in Five Nights at Freddy's: Security Breach as a minor antagonist. He resides in Fazcade as the primary DJ.",
+            "behaviour": "DJ Music Man is the main DJ of the west arcade in his ballroom, performing music in his DJ booth for the kids who visit there. When Gregory deactivates the safety protocols, DJMM will enter bouncer mode and disappear from the stage. After flipping a switch in the restroom closet, he will attempt to grab Gregory. While Gregory finds the other switches, DJMM will crawl around the arcade on the walls, disappearing into the tunnels. When Gregory pulls the last lever in a long hallway, he will come through a tunnel and a chase sequence will begin. The only way to survive this is to outrun him. When Gregory manages to successfully get to the security office, DJMM retreats to his DJ booth in the ballroom. As revealed in Help Wanted 2, he is capable of switching between any image in his eyes.",
             "id": 5
         },
         {
-            "characterName": "The Amalgamation",
-            "description": "dude idek",
-            "behaviour": "lets not discuss the lore significance",
+            "characterName": "Daycare Attendant",
+            "description": "The Daycare Attendant, otherwise known in-game as Sun and Moon is a daycare animatronic that appears in Five Nights at Freddy's: Security Breach as a recurring antagonist in its Moon form. It returns in the DLC Ruin where it is rebooted by Cassie into becoming a complete mix between Sun and Moon named Eclipse. It also returns in Five Nights at Freddy's: Help Wanted 2 as both Sun and Moon.",
+            "behaviour": "Sun: as Sun, the Daycare Attendant is upbeat and energetic, similar to Funtime Freddy. He enjoys doing activities with children such as putting on puppet shows and drinking Fizzy Faz. When Gregory knocks down the cans as a way to distract him, Sun panics quickly and rushes to clean them up. He's also very serious about keeping the lights on as a way to prevent himself from transforming into Moon. This could be due to Sun being concerned for Gregory, or it could be him showing fear of his alternate side and not wanting to transform. However, once Gregory has turned on all five generators and reaches the Daycare's exit to push the button, Sun becomes angry and carries Gregory out of the play area then 'alerting' the others to Gregory's location, as punishment for not keeping the lights on. This, along with his propensity for cleaning, shows Sun cares strongly about following the rules. Contrary to this, the Daycare Attendant's room is messy and contains cobwebs, implying Sun does not clean his own room. It's likely that Sun's obsession with cleaning only applies to the Daycare, for health and safety reasons. In the Ruin DLC, when Cassie enters the Daycare, she first gets ambushed by Moon until she shines the flashlight on him, causing Sun to briefly fight his way into control of his body and beg for Cassie to free him from the 'nap' Moon placed him in. As he struggles, Sun begs for Cassie to restore the lights of the Daycare by finding and turning on the generators that lie scattered around the area, and then rebooting them using the Faz-Wrench. While she does so, Sun shakily sings a sad song seemingly to himself, indicating that Moon's treatment of him has rattled him significantly. This can only be heard while wearing the Security Mask. \nMoon: As Moon, the Daycare Attendant is a malevolent and aggressive enemy who constantly chases Gregory once the lights are turned off, and attempts to punish him for staying up 'past his bedtime'. He still has a great distaste for messes and feels responsible for cleaning them like his daytime counterpart does, but to a more demented degree. This shows how strict both Sun and Moon are with upholding rules. However, in the later hours, Moon will not actively chase and attack, but will stalk the player, dancing and performing acrobatic tricks until the player lingers too closely to him or the power is not restored at the time limit. This implies that he enjoys taunting and psychologically abusing his victims before attacking them. In the Ruin DLC, following the place being destroyed, it is revealed that Moon has more or less become the robot's dominant personality and placed Sun into a 'nap' of sorts, leading to the two personalities fighting over the body with Moon mercilessly heckling and ordering Sun to stand down.",
             "id": 6
+        },
+        {
+            "characterName": "The Amalgamation",
+            "description": "The Amalgamation is the merged endoskeletons of Freddy Fazbear, Chica, Bonnie, Foxy, and Golden Freddy. It was used as a source of remnant to keep William Afton alive, and is a major protagonist/anti-hero in the third novel. In the graphic novel, the Amalgamation is depicted with the heads of Chica, Bonnie, Freddy Fazbear, and Foxy. Its body is worn and dull-colored, with holes revealing the inner workings featured across the rusted shell. Possibly resulting from the merging of four various animatronics, the Amalgamation features differences in limb design, as its left arm seems to be of Foxy's , while its right Bonnie's. Chica's cupcake is also fused with her head.",
+            "behaviour": "The Amalgamation's mind is that of a mindless monster reacting with simple grunts and screeches that are both deep and distorted, as well as low, mechanical snoring noises. Some theorize that this implies all of the animatronics making up the amalgamation are constantly fighting each other for control. Nevertheless, they still appear to retain a fragment of motivation, a deep desire for vengeance against Burntrap. Another theory is that the Amalgamation is infused with agony, making it so that instead of having the souls of William's victims and harboring hate towards him specifically it is filled with the agony those victims felt, collecting agony infused items and attacking whatever comes near it. However, it is implied to still have some past history with Burntrap, as it attacks him despite Burntrap being part robot, unlike with Glamrock Freddy who the Amalgamation will not attack. If Burntrap is the Mimic and not Afton, then it's possible that the Amalgamation could be possessed by the Mimic's past victims.",
+            "id": 7
+        },
+        {
+            "characterName": "Burntrap",
+            "description": "Burntrap is a minor antagonist in Five Nights at Freddy's: Security Breach. He first appears in the 'Burn It All Down' Ending from the base game. Burntrap is an animatronic of enigmatic origin who resided in the underground ruins of Freddy Fazbear's Pizza Place.",
+            "behaviour": "Burntrap appears to have little to no personality as he doesn't appear to express any emotion, besides sinisterly laughing with sadistic joy. He also appears to be incapable of speech as he doesn't speak during his encounter with Gregory. However, Burntrap is implied to be persistent as he continues to try and possess Glamrock Freddy during the Burntrap Ending's boss battle even after Gregory repeatedly burns him with the flares located within his chamber.",
+            "id": 8
         }
         ]
     }
