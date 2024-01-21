@@ -51,8 +51,6 @@ async function getcharacters(game, character){
             });
             selection.appendChild(newButton);
             //document.body.appendChild(newButton);
-
-
         }
         else{
             alert("Error: 404")
@@ -118,8 +116,6 @@ function deleteintro() {
 }
 
 async function getcharacterinformation(game, character){
-    console.log(`function sent http://127.0.0.1:8090/${game}/${character}`);
-
     try {
 
         let response1 = await fetch(`http://127.0.0.1:8090/${game}/${character}`);
@@ -181,26 +177,20 @@ async function Search(){
     buttoncolorchange(-1);
     deletecharacterbuttons();
     deleteintro();
-    console.log(`http://127.0.0.1:8090/search/${searchtext}`);
+    deleteparagraphs();
     try {
         let response = await fetch(`http://127.0.0.1:8090/search/${searchtext}`);
         if(response.ok){
             let jsonbody = await response.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
-            let numcharacters = parseInt(JSON.parse(json));
-            // var image = document.getElementById("titleimage");
-            // image.src = "images/titlesmall.png";
-            // buttoncolorchange(-1);
-            // deletecharacterbuttons();
-            // deleteintro();
-            //for(let i = 0; i<numcharacters;i++){
-                //getcharacters(game, i);
-            //};
-            console.log(`lara ${body}`);
-            const selection = document.getElementById("characterdescriptions")
-            const mypara1 = document.createElement("p");
-            mypara1.textContent = body;
-            selection.appendChild(mypara1);
+            for(let i = 0; i<body.length;i++){
+                console.log(body[i]);
+                SearchCharacterName(body[i]);
+            };
+            // const selection = document.getElementById("characterdescriptions")
+            // const mypara1 = document.createElement("p");
+            // mypara1.textContent = body;
+            // selection.appendChild(mypara1);
 
         } else{
         alert("Error: 404");
@@ -209,3 +199,19 @@ async function Search(){
         alert(e);
     }
 };
+
+async function SearchCharacterName(name){
+    try {
+        let response = await fetch(`http://127.0.0.1:8090/charactergame/${name}`);
+        if(response.ok){
+            let jsonbody = await response.json();
+            let body = JSON.parse(JSON.stringify(jsonbody));
+            console.log(body[0], body[1]);
+            getcharacters(body[0], body[1]);
+        } else{
+        alert("Error: 404");
+    }
+    } catch(e) {
+        alert(e);
+    }
+}

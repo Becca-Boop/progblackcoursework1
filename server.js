@@ -41,6 +41,55 @@ app.set('jsondata', require('./data/characters.json'));
 // });
 
 
+app.get('/search/:searchtxt', async function(req, resp){
+    app.use(cors());
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games
+    //const space = new RegExp(`\+|(%20)`);
+    const space = new RegExp('%20');
+
+    const search = req.params['searchtxt'].toLowerCase();
+    search.replaceAll((space, "g"), ' ')
+
+    var jsonObj = [];
+    for (const thisgame of JSONgames){
+        const thisgamecharacters = thisgame.characters;
+        for (const thischaracter of thisgamecharacters){
+            if(thischaracter.characterName.toLowerCase().search(search) != -1){
+                const foundcharacter = thischaracter;
+                //json = `${json} ${foundcharacter.characterName}`;
+                jsonObj.push(foundcharacter.characterName);
+            }
+        }
+    }
+    resp.send(JSON.stringify(jsonObj));
+});
+
+app.get('/charactergame/:name', async function(req, resp){
+    app.use(cors());
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games
+    //const space = new RegExp(`\+|(%20)`);
+    const space = new RegExp('%20');
+
+    const charactername = req.params['name'];
+    charactername.replaceAll((space, "g"), ' ')
+
+    var jsonObj = [];
+    for (const thisgame of JSONgames){
+        const thisgamecharacters = thisgame.characters;
+        for (const thischaracter of thisgamecharacters){
+            if(thischaracter.characterName == charactername){
+                const foundcharacter = thischaracter;
+                //json = `${json} ${foundcharacter.characterName}`;
+                jsonObj.push(thisgame.id ,foundcharacter.id);
+            }
+        }
+    }
+    resp.send(JSON.stringify(jsonObj));
+});
+
+
 app.get('/:game/:character', async function(req,resp){
     app.use(cors());
     const data = req.app.get('jsondata');
@@ -146,30 +195,4 @@ app.get('/character/:character', async function(req,resp){
             resp.send(JSON.stringify(character.description));
         }
     }
-});
-
-// app.get('/search/:searchtxt', async function(req, resp){
-//     app.use(cors());
-//     const data = req.app.get('jsondata');
-//     const percent20 = '%20'
-//     const space = new RegExp(`+|${percent20}`);
-//     const search = req.params['character'];
-//     console.log(search)
-//     search.replaceAll((space, "g"), ' ')
-//     const re = new RegExp(search);
-//     let json = '';
-//     for (const thisgame of JSONgames){
-//         const thisgamecharacters = thisgame.characters;
-//         for (const thischaracter of thisgamecharacters){
-//             if(thischaracter.search(re) != -1){
-//                 const foundcharacter = thischaracter
-//                 json = `${json} ${foundcharacter.characterName}`;
-//             }
-//         }
-//     }
-//     resp.send(JSON.stringify(json));
-// });
-
-app.get('/search/:searchtxt', async function(req, resp){
-    resp.send('works for a bunny')
 });
