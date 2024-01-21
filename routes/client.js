@@ -111,10 +111,14 @@ function deleteintro() {
 }
 
 async function getcharacterinformation(game, character){
+    const selection = document.getElementById("characterdescriptions")
+    const mypara1 = document.createElement("p");
+    mypara1.textContent = "Waiting For Server";
+    selection.appendChild(mypara1);
     try {
-
         let response1 = await fetch(`http://127.0.0.1:8090/${game}/${character}/info`);
         if(response1.ok){
+            deleteparagraphs();
             let jsonbody = await response1.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
 
@@ -135,11 +139,7 @@ async function getcharacterinformation(game, character){
 
 
 async function Search(){
-    searchtext = document.getElementById('searchtext').value
-    const selection = document.getElementById("characterdescriptions")
-    const mypara1 = document.createElement("p");
-    mypara1.textContent = `Search results for '${searchtext}':`;
-    selection.appendChild(mypara1);
+    searchtext = document.getElementById('searchtext').value;
     var image = document.getElementById("titleimage");
     image.src = "images/titlesmall.png";
     buttoncolorchange(-1);
@@ -151,9 +151,17 @@ async function Search(){
         if(response.ok){
             let jsonbody = await response.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
-            for(let i = 0; i<body.length;i++){
-                SearchCharacterName(body[i]);
-            };
+            if(body.length == 1 && body[0] == "no results"){
+                const selection = document.getElementById("characterdescriptions")
+                const mypara1 = document.createElement("p");
+                mypara1.textContent = `No Search Results For '${searchtext}'`;
+                selection.appendChild(mypara1);
+            }
+            else{
+                for(let i = 0; i<body.length;i++){
+                    SearchCharacterName(body[i]);
+                };
+            }
         } else{
         alert("Error: 404");
     }

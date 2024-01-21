@@ -62,6 +62,9 @@ app.get('/search/:searchtxt', async function(req, resp){
             }
         }
     }
+    if (jsonObj.length < 1){
+        jsonObj.push("no results");
+    }
     resp.send(JSON.stringify(jsonObj));
 });
 
@@ -130,63 +133,6 @@ app.get('/:game/:character', async function(req,resp){
     }
 });
 
-app.get('/:game/:character/description', async function(req,resp){
-    app.use(cors());
-    const data = req.app.get('jsondata');
-    const JSONgames = data.games
-
-    for (const thisgame of JSONgames){
-        if (thisgame.id == req.params['game']){
-            const thisgamecharacters = thisgame.characters;
-            for (const thischaracter of thisgamecharacters){
-                if(thischaracter.id == req.params['character']){
-                    const foundcharacter = thischaracter
-                    const json = JSON.stringify(foundcharacter.description);
-                    resp.send(json);
-                }
-            }
-        }
-    }
-});
-
-app.get('/:game/:character/behaviour', async function(req,resp){
-    app.use(cors());
-    const data = req.app.get('jsondata');
-    const JSONgames = data.games
-
-    for (const thisgame of JSONgames){
-        if (thisgame.id == req.params['game']){
-            const thisgamecharacters = thisgame.characters;
-            for (const thischaracter of thisgamecharacters){
-                if(thischaracter.id == req.params['character']){
-                    const foundcharacter = thischaracter
-                    const json = JSON.stringify(foundcharacter.behaviour);
-                    resp.send(json);
-                }
-            }
-        }
-    }
-});
-
-app.get('/:game/:character/image', async function(req,resp){
-    app.use(cors());
-    const data = req.app.get('jsondata');
-    const JSONgames = data.games
-
-    for (const thisgame of JSONgames){
-        if (thisgame.id == req.params['game']){
-            const thisgamecharacters = thisgame.characters;
-            for (const thischaracter of thisgamecharacters){
-                if(thischaracter.id == req.params['character']){
-                    const foundcharacter = thischaracter
-                    const json = JSON.stringify(foundcharacter.image);
-                    resp.send(json);
-                }
-            }
-        }
-    }
-});
-
 app.get('/:game', async function(req,resp){
     app.use(cors());
     const data = req.app.get('jsondata');
@@ -206,11 +152,7 @@ app.get('/:game', async function(req,resp){
 app.get('/character/:character', async function(req,resp){
     app.use(cors());
     const data = req.app.get('jsondata');
-    //const JSONgames = JSON.parse(data);
-
     const characters = data.games[0].characters;
-
-
     for (const character of characters){
         if (character.id == req.params['character']){
             resp.send(JSON.stringify(character.description));
