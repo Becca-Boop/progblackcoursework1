@@ -8,31 +8,34 @@
 </head>
 <body>
     <img src ="images/title.png" id = "titleimage"> <br> <br>
-    <h1>Five Nights At Freddy's Character Guide</h1>
 
-    <form name="searchform" method="get" onsubmit="Search();return false">
-        <label for="searchtext">Search Characters:</label><br>
-        <input type="text" id="searchtext" name="searchtext">
-        <input type="submit" onsubmit="Search()" value="Submit">
+    <span>
+        <h1>Five Nights At Freddy's Character Guide</h1>
 
-    </form>
-
+        <div id="form">
+            <form name="searchform" method="get" onsubmit="Search();return false">
+                <input type="text" id="searchtext" placeholder="Search Characters: " name="searchtext">
+                <input type="submit" onsubmit="Search()" value="Submit">
+            </form>
+        </div>
+    </span>
     <section id = "intro">
         <p>Welcome to the Five Nights At Freddy's Character Guide.</p>
         <p></p>
         <p>This website is dedicated to the documentation of characters from the FNAF franchise, each character is documented in the game that they first appear.</p>
     </section>
-
-    <button id = 1 onclick="character(1)">FNAF 1</button>
-    <button id = 2 onclick="character(2)">FNAF 2</button>
-    <button id = 3 onclick="character(3)">FNAF 3</button>
-    <button id = 4 onclick="character(4)">FNAF 4</button>
-    <button id = 5 onclick="character(5)">Sister Location</button>
-    <button id = 6 onclick="character(6)">Pizzaria Simulator</button>
-    <button id = 7 onclick="character(7)">Ultimate Custom Night</button>
-    <button id = 8 onclick="character(8)">Help Wanted</button>
-    <button id = 9 onclick="character(9)">Security Breach</button>
-    <div id = "div"></div>
+    <div id = "gamebuttons">
+        <button id = 1 onclick="character(1)">FNAF 1</button>
+        <button id = 2 onclick="character(2)">FNAF 2</button>
+        <button id = 3 onclick="character(3)">FNAF 3</button>
+        <button id = 4 onclick="character(4)">FNAF 4</button>
+        <button id = 5 onclick="character(5)">Sister Location</button>
+        <button id = 6 onclick="character(6)">Pizzaria Simulator</button>
+        <button id = 7 onclick="character(7)">Ultimate Custom Night</button>
+        <button id = 8 onclick="character(8)">Help Wanted</button>
+        <button id = 9 onclick="character(9)">Security Breach</button>
+    </div>
+    <div id = "characterbuttons"></div>
     <p id = "para"></p>
     <section id = "characterdescriptions"></section>
 
