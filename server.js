@@ -89,6 +89,27 @@ app.get('/charactergame/:name', async function(req, resp){
     resp.send(JSON.stringify(jsonObj));
 });
 
+app.get('/:game/:character/info', async function(req, resp){
+    app.use(cors());
+    const data = req.app.get('jsondata');
+    const JSONgames = data.games;
+
+    var jsonObj = [];
+    for (const thisgame of JSONgames){
+        if(thisgame.id == req.params['game']){
+            const thisgamecharacters = thisgame.characters;
+            for (const thischaracter of thisgamecharacters){
+                if(thischaracter.id == req.params['character']){
+                    const foundcharacter = thischaracter;
+                    //json = `${json} ${foundcharacter.characterName}`;
+                    jsonObj.push(foundcharacter.characterName, foundcharacter.description, foundcharacter.behaviour);
+                }
+            }
+        }
+    }
+    resp.send(JSON.stringify(jsonObj));
+});
+
 
 app.get('/:game/:character', async function(req,resp){
     app.use(cors());

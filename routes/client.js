@@ -32,7 +32,6 @@ async function getcharacters(game, character){
             let body = JSON.parse(JSON.stringify(jsonbody));
             
             buttonNum += 1;
-            //const selection = document.querySelector("newbuttons")
             const selection = document.querySelector("div")
 
             const newButton = document.createElement('button');
@@ -42,15 +41,12 @@ async function getcharacters(game, character){
             newButton.dataset.characterid = character
             let thisgame = game;
             let thischaracter = character;
-            //newButton.onclick = getcharacterinformation(game, character);
-            console.log(`${thisgame} , ${thischaracter}`)
             newButton.addEventListener('click', () => {
                 deleteparagraphs();
                 buttoncolorchange(newButton.id);
                 getcharacterinformation(newButton.dataset.gameid,newButton.dataset.characterid);
             });
             selection.appendChild(newButton);
-            //document.body.appendChild(newButton);
         }
         else{
             alert("Error: 404")
@@ -101,7 +97,6 @@ function deletecharacterbuttons() {
 };
 
 function deleteparagraphs() {
-    //const selection = document.querySelector("section")
     const selection = document.getElementById("characterdescriptions")
     while (selection.firstChild != null) {
         selection.removeChild(selection.firstChild);
@@ -118,43 +113,17 @@ function deleteintro() {
 async function getcharacterinformation(game, character){
     try {
 
-        let response1 = await fetch(`http://127.0.0.1:8090/${game}/${character}`);
+        let response1 = await fetch(`http://127.0.0.1:8090/${game}/${character}/info`);
         if(response1.ok){
             let jsonbody = await response1.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
-            //const selection = document.querySelector("section")
-            const selection = document.getElementById("characterdescriptions")
-            const mypara1 = document.createElement("p");
-            mypara1.textContent = body;
-            selection.appendChild(mypara1);
-        }
-        else{
-            alert("Error: 404")
-        }
-        let response2 = await fetch(`http://127.0.0.1:8090/${game}/${character}/description`);
-        if(response2.ok){
-            let jsonbody = await response2.json();
-            let body = JSON.parse(JSON.stringify(jsonbody));
-            console.log(body);
-            //const selection = document.querySelector("section")
-            const selection = document.getElementById("characterdescriptions")
-            const mypara1 = document.createElement("p");
-            mypara1.textContent = body;
-            selection.appendChild(mypara1);
-        }
-        else{
-            alert("Error: 404")
-        }
-        let response3 = await fetch(`http://127.0.0.1:8090/${game}/${character}/behaviour`);
-        if(response3.ok){
-            let jsonbody = await response3.json();
-            let body = JSON.parse(JSON.stringify(jsonbody));
-            console.log(body);
-            //const selection = document.querySelector("section")
-            const selection = document.getElementById("characterdescriptions")
-            const mypara1 = document.createElement("p");
-            mypara1.textContent = body;
-            selection.appendChild(mypara1);
+
+            for (let i=0; i<body.length; i++){
+                const selection = document.getElementById("characterdescriptions")
+                const mypara1 = document.createElement("p");
+                mypara1.textContent = body[i];
+                selection.appendChild(mypara1);
+            };
         }
         else{
             alert("Error: 404")
@@ -166,7 +135,6 @@ async function getcharacterinformation(game, character){
 
 
 async function Search(){
-    //document.searchform.submit();
     searchtext = document.getElementById('searchtext').value
     const selection = document.getElementById("characterdescriptions")
     const mypara1 = document.createElement("p");
@@ -184,14 +152,8 @@ async function Search(){
             let jsonbody = await response.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
             for(let i = 0; i<body.length;i++){
-                console.log(body[i]);
                 SearchCharacterName(body[i]);
             };
-            // const selection = document.getElementById("characterdescriptions")
-            // const mypara1 = document.createElement("p");
-            // mypara1.textContent = body;
-            // selection.appendChild(mypara1);
-
         } else{
         alert("Error: 404");
     }
