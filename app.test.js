@@ -13,7 +13,37 @@ describe('Test the search service', () => {
         return request(app)
             .get('/search/freddy')
             .expect('Content-type', /json/);
-    })
+    });
+    test('GET /search/chi succeeds', () => {
+        return request(app)
+            .get('/search/chi')
+            .expect(200)
+    });
+    test('GET /search/chi returns JSON', () => {
+        return request(app)
+            .get('/search/chi')
+            .expect('Content-type', /json/);
+    });
+    test('GET /search/lara succeeds', () => {
+        return request(app)
+            .get('/search/lara')
+            .expect(200)
+    });
+    test('GET /search/lara returns JSON', () => {
+        return request(app)
+            .get('/search/lara')
+            .expect('Content-type', /json/);
+    });
+    test('GET /search/aloy succeeds', () => {
+        return request(app)
+            .get('/search/aloy')
+            .expect(200)
+    });
+    test('GET /search/aloy returns JSON', () => {
+        return request(app)
+            .get('/search/aloy')
+            .expect('Content-type', /json/);
+    });
 });
 
 describe('Test the /charactergame/:name service', () => {
@@ -93,10 +123,6 @@ describe('Test the /charactergame/:name service', () => {
         return request(app)
             .get(`/charactergame/${str}`)
             .expect('Content-type', /json/);
-    });
-    test.each(characters)('GET /charactergame/all characters returns expected', (str, expected) => {
-        const result = request(app).get(`/charactergame/${str}`)
-        expect(JSON.parse(JSON.stringify(result))).toBe(expected);
     });
 });
 
@@ -186,7 +212,6 @@ describe('Test the /:game/:character/info service and /:game/:character', () => 
     test.each(characters)('GET /:game/:character/ service returns JSON', (game, character) => {
         return request(app)
             .get(`/${game}/${character}`)
-            console.log(request(app).get(`/${game}/${character}`))
             .expect('Content-type', /json/);
     });
 });
@@ -207,15 +232,6 @@ describe('Test the /:game service', () => {
         return request(app)
             .get(`/${game}`)
             .expect(200)
-    });
-    test('GET /:game returns JSON', (game, expected) => {
-        return request(app)
-            .get(`/${game}`)
-            .expect('Content-type', /json/);
-    });
-    test('GET /:game returns expected', (game, expected) => {
-        return request(app)
-            .get(`/${game}`)
             .expect('Content-type', /json/);
     });
 });

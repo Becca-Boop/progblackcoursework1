@@ -33,6 +33,7 @@ app.get('/search/:searchtxt', async function(req, resp){
     if (jsonObj.length < 1){
         jsonObj.push("no results");
     }
+    resp.setHeader("Content-Type", "applications/json");
     resp.send(JSON.stringify(jsonObj));
 });
 
@@ -55,7 +56,7 @@ app.get('/charactergame/:name', async function(req, resp){
             }
         }
     }
-    console.log(JSON.stringify(jsonObj));
+    resp.setHeader("Content-Type", "applications/json");
     resp.send(JSON.stringify(jsonObj));
 });
 
@@ -76,6 +77,7 @@ app.get('/:game/:character/info', async function(req, resp){
             }
         }
     }
+    resp.setHeader("Content-Type", "applications/json");
     resp.send(JSON.stringify(jsonObj));
 });
 
@@ -92,6 +94,7 @@ app.get('/:game/:character', async function(req,resp){
                 if(thischaracter.id == req.params['character']){
                     const foundcharacter = thischaracter
                     const json = JSON.stringify(foundcharacter.characterName);
+                    resp.setHeader("Content-Type", "applications/json");
                     resp.send(json);
                 }
             }
@@ -103,16 +106,17 @@ app.get('/:game', async function(req,resp){
     app.use(cors());
     const data = req.app.get('jsondata');
     const JSONgames = data.games;
-    var i = 0;
+    var numCharacters = 0;
 
     for (const thisgame of JSONgames){
         if (thisgame.id == req.params['game']){
             for(const character of thisgame.characters){
-                i++;
+                numCharacters++;
             };
         };
     };
-    resp.send(JSON.stringify(i));
+    resp.setHeader("Content-Type", "applications/json");
+    resp.send(JSON.stringify(numCharacters));
 });
 
 module.exports = app;

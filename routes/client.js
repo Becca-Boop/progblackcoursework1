@@ -32,6 +32,7 @@ async function getcharacters(game, character){
             let body = JSON.parse(JSON.stringify(jsonbody));
             
             buttonNum += 1;
+            //const selection = document.querySelector("div")
             const selection = document.getElementById("characterbuttons");
             const newButton = document.createElement('button');
             newButton.id = `${buttonNum}`;
@@ -175,7 +176,6 @@ async function SearchCharacterName(name){
         if(response.ok){
             let jsonbody = await response.json();
             let body = JSON.parse(JSON.stringify(jsonbody));
-            console.log(body[0], body[1]);
             getcharacters(body[0], body[1]);
         } else{
         alert("Error: 404");
