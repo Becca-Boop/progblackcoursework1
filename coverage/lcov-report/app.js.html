@@ -183,14 +183,12 @@
 <a name='L118'></a><a href='#L118'>118</a>
 <a name='L119'></a><a href='#L119'>119</a>
 <a name='L120'></a><a href='#L120'>120</a>
-<a name='L121'></a><a href='#L121'>121</a>
-<a name='L122'></a><a href='#L122'>122</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L121'></a><a href='#L121'>121</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -267,7 +265,6 @@
 <span class="cline-any cline-yes">130x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">130x</span>
 <span class="cline-any cline-yes">130x</span>
@@ -305,103 +302,102 @@
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const express = require('express');
-const app = express()
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const express = require('express');
+const app = express();
 &nbsp;
-const fs = require('fs');
+const fs = require('fs'); // eslint-disable-line
 &nbsp;
 const cors = require('cors');
-&nbsp;
 &nbsp;
 app.use(express.static('routes'));
 app.use(express.static('data'));
 app.set('jsondata', require('./data/characters.json'));
 &nbsp;
-app.get('/search/:searchtxt', async function(req, resp){
+app.get('/search/:searchtxt', async function (req, resp) {
     app.use(cors());
     const data = req.app.get('jsondata');
-    const JSONgames = data.games
-    const space = new RegExp('%20');
+    const JSONgames = data.games;
+    const space = new RegExp('%20'); // eslint-disable-line
 &nbsp;
-    var search = req.params['searchtxt'].toLowerCase();
-    search = search.replaceAll((space, "g"), ' ');
-    const regsearch = new RegExp(search);
+    let search = req.params.searchtxt.toLowerCase();
+    search = search.replaceAll((space, 'g'), ' ');
+    const regsearch = new RegExp(search); // eslint-disable-line
 &nbsp;
-    var jsonObj = [];
-    for (const thisgame of JSONgames){
+    const jsonObj = [];
+    for (const thisgame of JSONgames) {
         const thisgamecharacters = thisgame.characters;
-        for (const thischaracter of thisgamecharacters){
-            if(thischaracter.characterName.toLowerCase().search(regsearch) != -1){
+        for (const thischaracter of thisgamecharacters) {
+            if (thischaracter.characterName.toLowerCase().search(regsearch) != -1) {
                 const foundcharacter = thischaracter;
                 jsonObj.push(foundcharacter.characterName);
             }
         }
     }
-    if (jsonObj.length &lt; 1){
-        jsonObj.push("no results");
+    if (jsonObj.length &lt; 1) {
+        jsonObj.push('no results');
     }
-    resp.setHeader("Content-Type", "applications/json");
+    resp.setHeader('Content-Type', 'applications/json');
     resp.send(JSON.stringify(jsonObj));
 });
 &nbsp;
-app.get('/charactergame/:name', async function(req, resp){
+app.get('/charactergame/:name', async function (req, resp) {
     app.use(cors());
     const data = req.app.get('jsondata');
-    const JSONgames = data.games
-    const space = new RegExp('%20');
+    const JSONgames = data.games;
+    const space = new RegExp('%20'); // eslint-disable-line
 &nbsp;
-    const charactername = req.params['name'];
-    charactername.replaceAll((space, "g"), ' ')
+    const charactername = req.params.name;
+    charactername.replaceAll((space, 'g'), ' ');
 &nbsp;
-    var jsonObj = [];
-    for (const thisgame of JSONgames){
+    const jsonObj = [];
+    for (const thisgame of JSONgames) {
         const thisgamecharacters = thisgame.characters;
-        for (const thischaracter of thisgamecharacters){
-            if(thischaracter.characterName == charactername){
+        for (const thischaracter of thisgamecharacters) {
+            if (thischaracter.characterName == charactername) {
                 const foundcharacter = thischaracter;
-                jsonObj.push(thisgame.id ,foundcharacter.id);
+                jsonObj.push(thisgame.id, foundcharacter.id);
             }
         }
     }
-    resp.setHeader("Content-Type", "applications/json");
+    resp.setHeader('Content-Type', 'applications/json');
     resp.send(JSON.stringify(jsonObj));
 });
 &nbsp;
-app.get('/:game/:character/info', async function(req, resp){
+app.get('/:game/:character/info', async function (req, resp) {
     app.use(cors());
     const data = req.app.get('jsondata');
     const JSONgames = data.games;
 &nbsp;
-    var jsonObj = [];
-    for (const thisgame of JSONgames){
-        if(thisgame.id == req.params['game']){
+    const jsonObj = [];
+    for (const thisgame of JSONgames) {
+        if (thisgame.id == req.params.game) {
             const thisgamecharacters = thisgame.characters;
-            for (const thischaracter of thisgamecharacters){
-                if(thischaracter.id == req.params['character']){
+            for (const thischaracter of thisgamecharacters) {
+                if (thischaracter.id == req.params.character) {
                     const foundcharacter = thischaracter;
                     jsonObj.push(foundcharacter.characterName, foundcharacter.description, foundcharacter.behaviour);
                 }
             }
         }
     }
-    resp.setHeader("Content-Type", "applications/json");
+    resp.setHeader('Content-Type', 'applications/json');
     resp.send(JSON.stringify(jsonObj));
 });
 &nbsp;
-&nbsp;
-app.get('/:game/:character', async function(req,resp){
+app.get('/:game/:character', async function (req, resp) {
     app.use(cors());
     const data = req.app.get('jsondata');
-    const JSONgames = data.games
+    const JSONgames = data.games;
 &nbsp;
-    for (const thisgame of JSONgames){
-        if (thisgame.id == req.params['game']){
+    for (const thisgame of JSONgames) {
+        if (thisgame.id == req.params.game) {
             const thisgamecharacters = thisgame.characters;
-            for (const thischaracter of thisgamecharacters){
-                if(thischaracter.id == req.params['character']){
-                    const foundcharacter = thischaracter
+            for (const thischaracter of thisgamecharacters) {
+                if (thischaracter.id == req.params.character) {
+                    const foundcharacter = thischaracter;
                     const json = JSON.stringify(foundcharacter.characterName);
-                    resp.setHeader("Content-Type", "applications/json");
+                    resp.setHeader('Content-Type', 'applications/json');
                     resp.send(json);
                 }
             }
@@ -409,31 +405,32 @@ app.get('/:game/:character', async function(req,resp){
     }
 });
 &nbsp;
-app.get('/:game', async function(req,resp){
+app.get('/:game', async function (req, resp) {
     app.use(cors());
     const data = req.app.get('jsondata');
     const JSONgames = data.games;
-    var numCharacters = 0;
+    let numCharacters = 0;
 &nbsp;
-    for (const thisgame of JSONgames){
-        if (thisgame.id == req.params['game']){
-            for(const character of thisgame.characters){
+    for (const thisgame of JSONgames) {
+        if (thisgame.id == req.params.game) {
+            for (const character of thisgame.characters) { // eslint-disable-line
                 numCharacters++;
             };
         };
     };
-    resp.setHeader("Content-Type", "applications/json");
+    resp.setHeader('Content-Type', 'applications/json');
     resp.send(JSON.stringify(numCharacters));
 });
 &nbsp;
-module.exports = app;</pre></td></tr></table></pre>
+module.exports = app;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-01-22T17:34:07.018Z
+                at 2024-01-22T18:53:42.359Z
             </div>
         <script src="prettify.js"></script>
         <script>

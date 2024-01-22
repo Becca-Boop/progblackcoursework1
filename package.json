@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "jest"
+    "pretest": "eslint *.js routes/client.js",
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
