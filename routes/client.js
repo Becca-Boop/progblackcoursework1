@@ -32,7 +32,6 @@ async function getcharacters(game, character){
             let body = JSON.parse(JSON.stringify(jsonbody));
             
             buttonNum += 1;
-            //const selection = document.querySelector("div")
             const selection = document.getElementById("characterbuttons");
             const newButton = document.createElement('button');
             newButton.id = `${buttonNum}`;
