@@ -31,7 +31,7 @@ async function getcharacters (game, character) {
             const body = JSON.parse(JSON.stringify(jsonbody));
 
             buttonNum += 1;
-            // const selection = document.querySelector("div")
+            deleteparagraphs();
             const selection = document.getElementById('characterbuttons');
             const newButton = document.createElement('button');
             newButton.id = `${buttonNum}`;
@@ -42,6 +42,7 @@ async function getcharacters (game, character) {
             const thischaracter = character; // eslint-disable-line
             newButton.addEventListener('click', () => {
                 deleteparagraphs();
+                buttoncolorchange(newButton.dataset.gameid);
                 buttoncolorchange(newButton.id);
                 getcharacterinformation(newButton.dataset.gameid, newButton.dataset.characterid);
             });
@@ -137,10 +138,13 @@ async function Search () { // eslint-disable-line
     searchtext = document.getElementById('searchtext').value; // eslint-disable-line
     const image = document.getElementById('titleimage');
     image.src = 'images/titlesmall.png';
+    const selection = document.getElementById('characterdescriptions');
+    const mypara1 = document.createElement('p');
+    mypara1.textContent = 'Waiting For Server';
+    selection.appendChild(mypara1);
     buttoncolorchange(-1);
     deletecharacterbuttons();
     deleteintro();
-    deleteparagraphs();
     try {
         const response = await fetch(`http://127.0.0.1:8090/search/${searchtext}`); // eslint-disable-line
         if (response.ok) {
@@ -149,6 +153,7 @@ async function Search () { // eslint-disable-line
             if (body.length == 1 && body[0] == 'no results') {
                 const selection = document.getElementById('characterdescriptions');
                 const mypara1 = document.createElement('p');
+                deleteparagraphs();
                 mypara1.textContent = `No Search Results For '${searchtext}'`; // eslint-disable-line
                 selection.appendChild(mypara1);
             } else {
@@ -168,6 +173,7 @@ async function SearchCharacterName (name) {
     try {
         const response = await fetch(`http://127.0.0.1:8090/charactergame/${name}`);
         if (response.ok) {
+            deleteparagraphs();
             const jsonbody = await response.json();
             const body = JSON.parse(JSON.stringify(jsonbody));
             getcharacters(body[0], body[1]);
