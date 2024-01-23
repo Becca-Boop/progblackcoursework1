@@ -3,8 +3,11 @@ let buttonNum = 9;
 async function character (game) { // eslint-disable-line
     deleteparagraphs();
     deleteintro();
+    const HTTP_TIMEOUT = 400;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), HTTP_TIMEOUT); // eslint-disable-line
     try {
-        const response = await fetch(`http://127.0.0.1:8090/${game}`);
+        const response = await fetch(`http://127.0.0.1:8090/${game}`, { signal: controller.signal });
         if (response.ok) {
             const json = await response.json();
             const numcharacters = parseInt(JSON.parse(json));
@@ -19,13 +22,22 @@ async function character (game) { // eslint-disable-line
         alert('Error: 404');
     }
     } catch (e) {
-        alert(e);
+        if (e == 'AbortError: The user aborted a request.') {
+            alert('Error: No connection to server');
+        } else {
+            alert(e);
+        }
+    } finally {
+        clearTimeout(timeoutId);
     }
 };
 
 async function getcharacters (game, character) {
+    const HTTP_TIMEOUT = 400;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), HTTP_TIMEOUT); // eslint-disable-line
     try {
-        const response = await fetch(`http://127.0.0.1:8090/${game}/${character}`);
+        const response = await fetch(`http://127.0.0.1:8090/${game}/${character}`, { signal: controller.signal });
         if (response.ok) {
             const jsonbody = await response.json();
             const body = JSON.parse(JSON.stringify(jsonbody));
@@ -51,7 +63,13 @@ async function getcharacters (game, character) {
             alert('Error: 404');
         }
     } catch (e) {
-        alert(e);
+        if (e == 'AbortError: The user aborted a request.') {
+            alert('Error: No connection to server');
+        } else {
+            alert(e);
+        }
+    } finally {
+        clearTimeout(timeoutId);
     }
 }
 
@@ -109,12 +127,15 @@ function deleteintro () {
 }
 
 async function getcharacterinformation (game, character) {
+    const HTTP_TIMEOUT = 400;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), HTTP_TIMEOUT); // eslint-disable-line
     const selection = document.getElementById('characterdescriptions');
     const mypara1 = document.createElement('p');
     mypara1.textContent = 'Waiting For Server';
     selection.appendChild(mypara1);
     try {
-        const response1 = await fetch(`http://127.0.0.1:8090/${game}/${character}/info`);
+        const response1 = await fetch(`http://127.0.0.1:8090/${game}/${character}/info`, { signal: controller.signal });
         if (response1.ok) {
             deleteparagraphs();
             const jsonbody = await response1.json();
@@ -130,11 +151,20 @@ async function getcharacterinformation (game, character) {
             alert('Error: 404');
         }
     } catch (e) {
-        alert(e);
+        if (e == 'AbortError: The user aborted a request.') {
+            alert('Error: No connection to server');
+        } else {
+            alert(e);
+        }
+    } finally {
+        clearTimeout(timeoutId);
     }
 };
 
 async function Search () { // eslint-disable-line
+    const HTTP_TIMEOUT = 400;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), HTTP_TIMEOUT); // eslint-disable-line
     searchtext = document.getElementById('searchtext').value; // eslint-disable-line
     const image = document.getElementById('titleimage');
     image.src = 'images/titlesmall.png';
@@ -146,7 +176,7 @@ async function Search () { // eslint-disable-line
     deletecharacterbuttons();
     deleteintro();
     try {
-        const response = await fetch(`http://127.0.0.1:8090/search/${searchtext}`); // eslint-disable-line
+        const response = await fetch(`http://127.0.0.1:8090/search/${searchtext}`, {signal: controller.signal}); // eslint-disable-line
         if (response.ok) {
             const jsonbody = await response.json();
             const body = JSON.parse(JSON.stringify(jsonbody));
@@ -165,13 +195,22 @@ async function Search () { // eslint-disable-line
         alert('Error: 404');
     }
     } catch (e) {
-        alert(e);
+        if (e == 'AbortError: The user aborted a request.') {
+            alert('Error: No connection to server');
+        } else {
+            alert(e);
+        }
+    } finally {
+        clearTimeout(timeoutId);
     }
 };
 
 async function SearchCharacterName (name) {
+    const HTTP_TIMEOUT = 400;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), HTTP_TIMEOUT); // eslint-disable-line
     try {
-        const response = await fetch(`http://127.0.0.1:8090/charactergame/${name}`);
+        const response = await fetch(`http://127.0.0.1:8090/charactergame/${name}`, { signal: controller.signal });
         if (response.ok) {
             deleteparagraphs();
             const jsonbody = await response.json();
@@ -181,6 +220,12 @@ async function SearchCharacterName (name) {
         alert('Error: 404');
     }
     } catch (e) {
-        alert(e);
+        if (e == 'AbortError: The user aborted a request.') {
+            alert('Error: No connection to server');
+        } else {
+            alert(e);
+        }
+    } finally {
+        clearTimeout(timeoutId);
     }
 }
